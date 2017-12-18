@@ -3,7 +3,7 @@ title: Home
 ---
 
 = partial "shared/hero/hero", :locals => { :content => data[config[:client]].content, :type => "basic" }
-= partial "shared/travel/search_buttons"
+= partial "shared/travel/travel_search"
 = partial "shared/cards/card_grid", :locals => { :cards => data.cards.recommend_home, :title => "Recommended for you", :type => "basic" }
 = partial "shared/cards/card_grid", :locals => { :cards => data.cards.recommend_home, :title => "Buy things for me", :type => "zebra" }
 = partial "shared/articles/article_grid", :locals => { :cards => data.articles.dining,  :title => "Woof read this!" }

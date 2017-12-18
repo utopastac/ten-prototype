@@ -3,7 +3,7 @@
 		%header
 			%h2= data[config[:client]].content.travelSearchTitle
 			%h4= data[config[:client]].content.travelSearchSubtitle
-		%ul.travel-search-buttons
-			= partial "shared/travel/search_button", :locals => { :type => "flights", :title => "Flights" }
-			= partial "shared/travel/search_button", :locals => { :type => "hotels", :title => "Hotels" }
-			= partial "shared/travel/search_button", :locals => { :type => "cars", :title => "Cars" }
+		%ul#travel-search-buttons
+			= partial "shared/travel/search_button", :locals => { :type => "flights", :title => "Flights", :elem => "search-field-flights" }
+			= partial "shared/travel/search_button", :locals => { :type => "hotels", :title => "Hotels", :elem => "search-field-hotels" }
+			= partial "shared/travel/search_button", :locals => { :type => "cars", :title => "Cars", :elem => "search-field-cars" }

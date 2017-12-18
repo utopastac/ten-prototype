@@ -1,0 +1,8 @@
+#search-field-flights.travel-search-field
+	%div
+		%h4 Flights
+		.travel-search-bar
+			= partial "shared/travel/search_field_segment", :locals => { :label => "Fly from", :id => "departure", :placeholder => "Departure" }
+			= partial "shared/travel/search_field_segment", :locals => { :label => "Fly to", :id => "arrival", :placeholder => "Destination" }
+			= partial "shared/travel/search_field_segment", :locals => { :label => "Dates", :id => "dates", :placeholder => "Outbound – inbound" }
+			= partial "shared/travel/search_field_segment", :locals => { :label => "Passengers", :id => "passengers", :placeholder => "1 adult" }

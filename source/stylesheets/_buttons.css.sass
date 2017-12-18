@@ -33,6 +33,7 @@ input::-moz-focus-inner, button::-moz-focus-inner
   @extend %button
   border-radius: $button-border-radius
   text-align: center
+  cursor: pointer
   background: $col
   color: white
   padding: 0 units(4)
@@ -50,6 +51,9 @@ input::-moz-focus-inner, button::-moz-focus-inner
 
 button, input[type="submit"], a.button, .button
   @include button-style
+
+  &.inline
+    display: inline-block
 
   &:hover
     background-color: lighten($cta, 10%)

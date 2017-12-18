@@ -10,11 +10,11 @@
 		h4
 			@extend %body-2
 
-	ul.travel-search-buttons
+	ul#travel-search-buttons
 		display: flex
 
 	li
-		border: 1px solid $grey-light
+		border: 1px solid $grey-medium
 		padding: units(2)
 		width: units(20)
 		height: units(20)
@@ -24,6 +24,24 @@
 		align-items: center
 		justify-content: center
 		cursor: pointer
+
+		&.active
+			background-color: white
+
+			.button
+				@extend %toggled-button
+
+		&.flights
+			.title:before
+				@include contain-background($icon-flights)
+
+		&.hotels
+			.title:before
+				@include contain-background($icon-hotels)
+
+		&.cars
+			.title:before
+				@include contain-background($icon-cars)
 
 		&:hover
 			background-color: white
@@ -37,16 +55,16 @@
 		.title
 			@extend %display-1
 			width: 100%
-			margin: 0
+			display: flex
+			justify-content: center
+			align-items: center
 
 			&:before
 				content: ""
-				display: inline-block
 				margin-right: units(1)
-				width: units(2)
-				height: units(2)
-				margin: 0
-				@include contain-background($card-benefits-icon)
+				width: units(3)
+				height: units(3)
+				@include contain-background($icon-flights)
 
 		.button
 			@extend %toggle-button

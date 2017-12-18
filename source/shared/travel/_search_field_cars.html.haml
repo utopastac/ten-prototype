@@ -1,0 +1,7 @@
+#search-field-cars.travel-search-field
+	%div
+		%h4 Cars
+		.travel-search-bar
+			= partial "shared/travel/search_field_segment", :locals => { :label => "Pick up location", :id => "pick-up-location", :placeholder => "Depot" }
+			= partial "shared/travel/search_field_segment", :locals => { :label => "Date & time", :id => "dates-times", :placeholder => "Pick-up – drop off" }
+			= partial "shared/travel/search_field_segment", :locals => { :label => "Drivers age", :id => "drivers-age", :placeholder => "Must be over 21" }

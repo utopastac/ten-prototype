@@ -1,0 +1,7 @@
+#search-field-hotels.travel-search-field
+	%div
+		%h4 Hotels
+		.travel-search-bar
+			= partial "shared/travel/search_field_segment", :locals => { :label => "Destination", :id => "destination", :placeholder => "Search by location & hotel name" }
+			= partial "shared/travel/search_field_segment", :locals => { :label => "Dates", :id => "dates", :placeholder => "Check in – check out" }
+			= partial "shared/travel/search_field_segment", :locals => { :label => "Rooms & guests", :id => "rooms-guests", :placeholder => "How many people?" }

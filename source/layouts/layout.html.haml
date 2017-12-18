@@ -4,9 +4,11 @@
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1, height=device-height,  maximum-scale=1.0, target-densityDpi=device-dpi"}
     %meta{:name => "apple-mobile-web-app-capable", :content => "yes"}
     = stylesheet_link_tag "client/#{config[:client]}"
-    = javascript_include_tag "site"
+    
 
   %body
     = partial "structure/header"
     = yield
     = partial "structure/footer"
+
+    = javascript_include_tag "site"

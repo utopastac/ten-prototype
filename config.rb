@@ -19,6 +19,7 @@ set :images_dir, 'images'
 set :fonts_dir, 'fonts'
 
 activate :directory_indexes
+activate :sprockets
 activate :breadcrumbs, separator: ' / ', wrapper: :li
 
 config[:client] = "mastercard"

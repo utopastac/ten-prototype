@@ -1,0 +1,44 @@
+.travel-search-field
+	@extend %content-column
+	margin-bottom: units(4)
+	display: none
+
+	&.active
+		display: block
+	
+	h4
+		@extend %display-0
+		margin-bottom: units(1)
+
+	&#search-field-flights
+
+	&#search-field-hotels
+
+	&#search-field-cars
+
+.travel-search-bar
+	height: units(10)
+	background-color: white
+	border: $light-border
+	display: flex
+
+	.segment
+		flex: 1
+		position: relative
+		padding: units(1)
+
+		&:not(:last-child)
+			border-right: $light-border
+
+		label
+			@extend %caption
+			text-transform: uppercase
+			@extend %bold
+
+		input[type="text"]
+			border: none
+			@extend %body-2
+			outline: none
+			&:focus
+				border: none
+				outline: none
