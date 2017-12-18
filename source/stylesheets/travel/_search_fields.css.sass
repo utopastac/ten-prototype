@@ -1,14 +1,19 @@
 .travel-search-field
 	@extend %content-column
-	margin-bottom: units(4)
-	display: none
+	@include animate(0.5s)
+	margin-bottom: 0
+	height: 1px
+	opacity: 0
+	overflow: hidden
 
 	&.active
-		display: block
+		height: size(120)
+		opacity: 1
+		margin-bottom: units(4)					
 	
 	h4
 		@extend %display-0
-		margin-bottom: units(1)
+		margin-bottom: units(1)	
 
 	&#search-field-flights
 
@@ -18,6 +23,7 @@
 
 .travel-search-bar
 	height: units(10)
+	@include animate(0.5s)
 	background-color: white
 	border: $light-border
 	display: flex

@@ -64,6 +64,9 @@ button, input[type="submit"], a.button, .button
   &.secondary
     @extend %toggle-button
 
+    &:hover
+      @extend %toggled-button
+
   &.active
     color: white
     background-color: $cta
