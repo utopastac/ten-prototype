@@ -1,13 +1,18 @@
 (function() {
-	const travelSearchButtons = document.querySelectorAll("#travel-search-buttons li");
-	for(var i=0; i<travelSearchButtons.length; i++){
-		travelSearchButtons[i].addEventListener("click", toggleTravelSearchField);
-	}
+	const travelSearchButtons = $("#travel-search-buttons li");
+	const travelSearchButton = $("#travel-search-container .button");
+	travelSearchButtons.click(toggleTravelSearchField);
+
 	function toggleTravelSearchField(event){
-		var elem = event.currentTarget;
-		var target = elem.dataset.target;
-		elem.classList.toggle("active");
-		document.getElementById(target).classList.toggle("active");
-		elem.classList.contains("active") ? elem.querySelector(".button").innerHTML = "Selected" : elem.querySelector(".button").innerHTML = "Select";
+		var elem = $(event.currentTarget);
+		var target = elem.data("target");
+		elem.toggleClass("active");
+		$("#" + target).slideToggle();
+		elem.hasClass("active") ? $(".button", elem).html("Selected") : $(".button", elem).html("Select");
+		if(travelSearchButtons.hasClass("active")){
+			travelSearchButton.show();
+		} else {
+			travelSearchButton.hide();
+		}
 	}
 })();
