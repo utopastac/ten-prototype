@@ -7,7 +7,7 @@
 #header-nav-bar
 	@extend %content-column
 	@extend %content-column-flex
-	height: size($header-nav-bar-height)
+	height: $header-nav-bar-height
 	background: $header-nav-bar-background
 	border-top: $header-nav-bar-border
 	margin-top: -1px
@@ -92,11 +92,17 @@
 				&:not(:last-child)
 					margin-right: size(16)
 
+				&#main-menu-button
+					a
+						width: units(3)
+
 				a
 					display: block
-					background-size: cover
-					width: size(16)
-					height: size(16)
+					background-size: contain
+					background-repeat: no-repeat
+					background-position: center center
+					width: units(2)
+					height: $header-nav-bar-height
 
 			&.dark
 				li

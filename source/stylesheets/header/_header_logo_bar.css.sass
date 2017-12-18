@@ -4,7 +4,7 @@
 		top: 0
 		left: 0
 		right: units(8)
-	height: size($header-nav-bar-height)
+	height: $header-nav-bar-height
 	@extend %content-column
 	@extend %content-column-flex
 	z-index: 10000
@@ -13,7 +13,7 @@
 		align-items: center
 
 	@include min($screen-m)
-		height: size($header-logo-bar-height)
+		height: $header-logo-bar-height
 		background: $header-logo-bar-background
 
 	#logo
