@@ -19,9 +19,12 @@
 			display: flex
 			align-items: center
 
-		ul#main-nav
+		ul.main-nav
 			flex: 1
 			justify-content: $header-nav-bar-alignment
+			display: none
+			@include min($screen-m)
+				display: flex
 
 			li
 				@extend %body-1
@@ -36,45 +39,47 @@
 					display: block
 					color: $header-nav-bar-color
 
-			&.icons-dark
-				li
-					a
-						@extend %icon-nav
-					&.travel
+			&.icons
+				&.dark
+					li
 						a
-							background-image: image-url("icons/icon-travel-dark.svg")
-					&.dining
-						a
-							background-image: image-url("icons/icon-dining-dark.svg")
-					&.entertainment
-						a
-							background-image: image-url("icons/icon-entertainment-dark.svg")
-					&.events
-						a
-							background-image: image-url("icons/icon-events-dark.svg")
-					&.benefits
-						a
-							background-image: image-url("icons/icon-benefits-dark.svg")
+							@extend %icon-nav
+						&.travel
+							a
+								background-image: image-url("icons/icon-travel-dark.svg")
+						&.dining
+							a
+								background-image: image-url("icons/icon-dining-dark.svg")
+						&.entertainment
+							a
+								background-image: image-url("icons/icon-entertainment-dark.svg")
+						&.events
+							a
+								background-image: image-url("icons/icon-events-dark.svg")
+						&.benefits
+							a
+								background-image: image-url("icons/icon-benefits-dark.svg")
 
-			&.icons-light
-				li
-					a
-						@extend %icon-nav
-					&.travel
+			&.icons
+				&.light
+					li
 						a
-							background-image: image-url("icons/icon-travel-light.svg")
-					&.dining
-						a
-							background-image: image-url("icons/icon-dining-light.svg")
-					&.entertainment
-						a
-							background-image: image-url("icons/icon-entertainment-light.svg")
-					&.events
-						a
-							background-image: image-url("icons/icon-events-light.svg")
-					&.benefits
-						a
-							background-image: image-url("icons/icon-benefits-light.svg")
+							@extend %icon-nav
+						&.travel
+							a
+								background-image: image-url("icons/icon-travel-light.svg")
+						&.dining
+							a
+								background-image: image-url("icons/icon-dining-light.svg")
+						&.entertainment
+							a
+								background-image: image-url("icons/icon-entertainment-light.svg")
+						&.events
+							a
+								background-image: image-url("icons/icon-events-light.svg")
+						&.benefits
+							a
+								background-image: image-url("icons/icon-benefits-light.svg")
 
 		ul#sub-nav
 			position: absolute
@@ -83,6 +88,7 @@
 			transform: translateY(-50%)
 
 			li
+				cursor: pointer
 				&:not(:last-child)
 					margin-right: size(16)
 
@@ -92,7 +98,7 @@
 					width: size(16)
 					height: size(16)
 
-			&.icons-dark
+			&.dark
 				li
 					&.search
 						a
@@ -100,11 +106,11 @@
 					&.profile
 						a
 							background-image: image-url("icons/profile-black.svg")
-					&.menu
+					&#main-menu-button
 						a
 							background-image: image-url("icons/menu-black.svg")
 
-			&.icons-light
+			&.light
 				li
 					&.search
 						a
@@ -112,6 +118,6 @@
 					&.profile
 						a
 							background-image: image-url("icons/profile-white.svg")
-					&.menu
+					&#main-menu-button
 						a
 							background-image: image-url("icons/menu-white.svg")

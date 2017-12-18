@@ -1,16 +1,22 @@
 #travel-search
 	@extend %content-column
-	margin-bottom: units(5)
 
 	header
 		margin-bottom: units(3)
-		display: flex
-		justify-content: space-between
+		
 		h2
 			@extend %display-2
 			margin-bottom: units(1)
 		h4
 			@extend %body-2
+			margin-bottom: units(2)
+
+		@include min($screen-m)
+			display: flex
+			justify-content: space-between
+
+			h4
+				margin-bottom: 0
 
 	ul#travel-search-buttons
 		display: flex
@@ -18,14 +24,22 @@
 	li
 		border: 1px solid $grey-medium
 		padding: units(2)
-		width: units(20)
-		height: units(20)
 		text-align: center
 		display: flex
-		flex-wrap: wrap
 		align-items: center
 		justify-content: center
 		cursor: pointer
+		flex-wrap: wrap
+
+		&:not(:last-child)
+			margin-right: units(1)
+
+		@include min($screen-m)
+			width: units(20)
+			height: units(20)
+
+			&:not(:last-child)
+				margin-right: units(2)
 
 		&.active
 			background-color: white
@@ -51,26 +65,37 @@
 			.button
 				@extend %toggled-button
 
-		&:not(:last-child)
-			margin-right: units(2)
-
 		.title
-			@extend %display-1
+			@extend %body-2
 			width: 100%
 			display: flex
 			justify-content: center
 			align-items: center
 
-			&:before
-				content: ""
-				margin-right: units(1)
-				width: units(3)
-				height: units(3)
-				@include contain-background($icon-flights)
+			@include min($screen-m)
+				font-size: 2.4rem
+
+				&:before
+					content: ""
+					margin-right: units(1)
+					width: units(3)
+					height: units(3)
+					@include contain-background($icon-flights)
 
 		.button
 			@extend %toggle-button
+			font-size: 1.2rem
 			margin: 0
+			padding: 0 units(1)
+			height: units(4)
+			line-height: units(4)
+			margin-top: units(1)
+
+			@include min($screen-m)
+				font-size: 1.4rem
+				padding: 0 units(4)
+				height: units(5)
+				line-height: units(5)
 
 		
 

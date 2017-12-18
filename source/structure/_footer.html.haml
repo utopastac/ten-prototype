@@ -1,12 +1,7 @@
 - content = data[config[:client]].content
 %footer#main-footer
 	%div
-		%ul#footer-links
-			%li Privacy
-			%li Accessability
-			%li Terms & conditions
-			%li FAQ
-			%li Contact us
+		= partial "shared/privacy_links"
 		%ul#footer-numbers
 			- if content.footerNumbers
 				- content.footerNumbers.each do |number|

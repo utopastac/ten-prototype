@@ -6,23 +6,13 @@
 
 %section#header-nav-bar
 	%nav
-		%ul#main-nav{:class => data[config[:client]].content.navTheme}
-			%li.travel
-				= link_to 'Travel', '/travel'
-			%li.dining
-				= link_to 'Dining', '/dining'
-			%li.entertainment
-				= link_to 'Entertainment', '/entertainment'
-			%li.events
-				= link_to 'Events', '/member-events'
-			%li.benefits
-				= link_to 'Benefits', '/benefits'
+		= partial "shared/navigation"
 
 		%ul#sub-nav{:class => data[config[:client]].content.navTheme}
 			-# %li.search
 			%li.profile
 				= link_to 'Profile', '/profile'
-			%li.menu
+			%li#main-menu-button
 				%a
 
 %section#header-breadcrumb-bar

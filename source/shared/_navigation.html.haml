@@ -1,0 +1,4 @@
+%ul.main-nav{:class => data[config[:client]].content.navTheme}
+	- data[config[:client]].content.sections.each do |section|
+		%li{:class => section.class}
+			= link_to section.title, section.url

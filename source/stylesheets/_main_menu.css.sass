@@ -1,0 +1,42 @@
+#main-menu-overlay
+	position: fixed
+	top: 0
+	left: 0
+	height: 100vh
+	width: 100vw
+	background: $main-menu-background
+	display: none
+	padding-top: units(5)
+	padding-left: units(5)
+
+	@include min($screen-m)
+		padding-top: units(10)
+		padding-left: units(10)
+
+	.close
+		position: absolute
+		top: units(5)
+		right: units(5)
+		width: units(3)
+		height: units(3)
+		@include contain-background($icon-close-light)
+		cursor: pointer
+
+	ul.main-nav
+		flex: 1
+		justify-content: $header-nav-bar-alignment
+		margin-bottom: units(6)
+
+		li
+			margin-bottom: units(2)
+			a
+				display: block
+				@extend %display-2
+				color: $main-menu-color
+
+	ul.privacy-links
+		opacity: 0.5
+		li
+			@extend %body-2
+			color: $main-menu-color
+			margin-bottom: units(1)

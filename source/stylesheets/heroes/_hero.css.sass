@@ -2,7 +2,9 @@
 	@extend %content-column
 	background: #F4F4F4
 	position: relative
-	margin-bottom: units(8)
+	margin-bottom: units(4)
+	@include min($screen-m)
+		margin-bottom: units(8)
 	
 	.image
 		@include cover-background($header-logo-bar-image)

@@ -1,6 +1,6 @@
 (function() {
 	const travelSearchButtons = $("#travel-search-buttons li");
-	const travelSearchButton = $("#travel-search-container .button");
+	const travelSearchButton = $("#travel-search-container > .button");
 	travelSearchButtons.click(toggleTravelSearchField);
 
 	function toggleTravelSearchField(event){

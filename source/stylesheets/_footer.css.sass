@@ -3,18 +3,29 @@ footer#main-footer
 	background: $footer-background
 	color: $footer-color
 	margin-top: units(5)
-	padding: units(5) 0 units(10) 0
+	padding: units(3) units(2) units(7) units(2)
 
-	#footer-links, #footer-numbers
-		display: flex
-		justify-content: center
-		align-items: center
+	@include min($screen-m)
+		padding: units(5) units(2) units(10) units(2)
 
-	#footer-links
-		margin-bottom: units(1)
+	.privacy-links, #footer-numbers
+		@include min($screen-m)
+			display: flex
+			justify-content: center
+			align-items: center
+
+	.privacy-links
+		margin-bottom: units(3)
+
+		@include min($screen-m)
+			margin-bottom: units(1)
+
 		li
 			@extend %body-1
-			margin: 0 units(2)
+			padding: units(0.5) 0
+
+			@include min($screen-m)
+				margin: 0 units(2)
 
 	#footer-numbers
 		margin-bottom: units(2)
@@ -22,7 +33,9 @@ footer#main-footer
 			@extend %body-1
 			display: flex
 			align-items: center
-			margin: 0 units(1)
+
+			@include min($screen-m)
+				margin: 0 units(1)
 
 			p
 				margin: 0
@@ -35,8 +48,10 @@ footer#main-footer
 					@extend %bold
 
 	#footer-copy
-		text-align: center
 		max-width: size(700)
 		margin: 0 auto
 		@extend %caption
 		opacity: 0.7
+
+		@include min($screen-m)
+			text-align: center

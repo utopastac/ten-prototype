@@ -1,7 +1,7 @@
 .travel-search-field
 	@extend %content-column
-	margin-bottom: units(4)
-	display: none			
+	display: none
+	margin-top: units(5)	
 	
 	h4
 		@extend %display-0
@@ -14,18 +14,25 @@
 	&#search-field-cars
 
 .travel-search-bar
-	height: units(10)
 	background-color: white
 	border: $light-border
-	display: flex
+
+	@include min($screen-m)
+		height: units(10)
+		display: flex
 
 	.segment
 		flex: 1
 		position: relative
-		padding: units(1)
-
+		padding: units(2)
 		&:not(:last-child)
-			border-right: $light-border
+			border-bottom: $light-border
+
+		@include min($screen-m)
+			padding: units(1)
+			border-bottom: none
+			&:not(:last-child)
+				border-right: $light-border
 
 		label
 			@extend %caption
