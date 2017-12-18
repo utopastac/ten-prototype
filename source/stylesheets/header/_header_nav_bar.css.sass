@@ -1,0 +1,117 @@
+%icon-nav
+	background-size: auto units(3)
+	background-repeat: no-repeat
+	background-position: center top
+	padding-top: size(32)
+
+#header-nav-bar
+	@extend %content-column
+	@extend %content-column-flex
+	height: size($header-nav-bar-height)
+	background: $header-nav-bar-background
+	border-top: $header-nav-bar-border
+	margin-top: -1px
+	position: relative
+	
+
+	nav
+		> *
+			display: flex
+			align-items: center
+
+		ul#main-nav
+			flex: 1
+			justify-content: $header-nav-bar-alignment
+
+			li
+				@extend %body-1
+				@include fontSize($header-nav-bar-text-size, $header-nav-bar-text-size)
+				letter-spacing: $header-nav-bar-text-letter-spacing
+				position: relative
+				color: $header-nav-bar-color
+				margin-right: size(40)
+				text-transform: $header-nav-bar-text-transform
+
+				a
+					display: block
+					color: $header-nav-bar-color
+
+			&.icons-dark
+				li
+					a
+						@extend %icon-nav
+					&.travel
+						a
+							background-image: image-url("icons/icon-travel-dark.svg")
+					&.dining
+						a
+							background-image: image-url("icons/icon-dining-dark.svg")
+					&.entertainment
+						a
+							background-image: image-url("icons/icon-entertainment-dark.svg")
+					&.events
+						a
+							background-image: image-url("icons/icon-events-dark.svg")
+					&.benefits
+						a
+							background-image: image-url("icons/icon-benefits-dark.svg")
+
+			&.icons-light
+				li
+					a
+						@extend %icon-nav
+					&.travel
+						a
+							background-image: image-url("icons/icon-travel-light.svg")
+					&.dining
+						a
+							background-image: image-url("icons/icon-dining-light.svg")
+					&.entertainment
+						a
+							background-image: image-url("icons/icon-entertainment-light.svg")
+					&.events
+						a
+							background-image: image-url("icons/icon-events-light.svg")
+					&.benefits
+						a
+							background-image: image-url("icons/icon-benefits-light.svg")
+
+		ul#sub-nav
+			position: absolute
+			right: 0
+			top: 50%
+			transform: translateY(-50%)
+
+			li
+				&:not(:last-child)
+					margin-right: size(16)
+
+				a
+					display: block
+					background-size: cover
+					width: size(16)
+					height: size(16)
+
+			&.icons-dark
+				li
+					&.search
+						a
+							background-image: image-url("icons/search-black.svg")
+					&.profile
+						a
+							background-image: image-url("icons/profile-black.svg")
+					&.menu
+						a
+							background-image: image-url("icons/menu-black.svg")
+
+			&.icons-light
+				li
+					&.search
+						a
+							background-image: image-url("icons/search-white.svg")
+					&.profile
+						a
+							background-image: image-url("icons/profile-white.svg")
+					&.menu
+						a
+							background-image: image-url("icons/menu-white.svg")

@@ -1,0 +1,6 @@
+---
+title: Search
+---
+
+= partial "shared/hero/hero", :locals => { :content => data[config[:client]].content, :type => "basic" }
+= partial "shared/articles/article_grid", :locals => { :cards => data.articles.travel }

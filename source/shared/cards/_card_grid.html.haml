@@ -1,0 +1,7 @@
+#card-grid{:class => type}
+	- if title
+		%header
+			%h3= title
+	%ul
+		- cards.each do |card|
+			= partial "shared/cards/card", :locals => card

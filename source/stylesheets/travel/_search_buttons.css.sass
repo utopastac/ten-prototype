@@ -1,0 +1,57 @@
+#travel-search
+	@extend %content-column
+	margin-bottom: units(5)
+
+	header
+		margin-bottom: units(3)
+		h2
+			@extend %display-2
+			margin-bottom: units(1)
+		h4
+			@extend %body-2
+
+	ul.travel-search-buttons
+		display: flex
+
+	li
+		border: 1px solid $grey-light
+		padding: units(2)
+		width: units(20)
+		height: units(20)
+		text-align: center
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		justify-content: center
+		cursor: pointer
+
+		&:hover
+			background-color: white
+
+			.button
+				@extend %toggled-button
+
+		&:not(:last-child)
+			margin-right: units(2)
+
+		.title
+			@extend %display-1
+			width: 100%
+			margin: 0
+
+			&:before
+				content: ""
+				display: inline-block
+				margin-right: units(1)
+				width: units(2)
+				height: units(2)
+				margin: 0
+				@include contain-background($card-benefits-icon)
+
+		.button
+			@extend %toggle-button
+			margin: 0
+
+		
+
+	

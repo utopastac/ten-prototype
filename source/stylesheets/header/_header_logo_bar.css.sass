@@ -1,0 +1,20 @@
+#header-logo-bar
+	@extend %content-column
+	@extend %content-column-flex
+	height: size($header-logo-bar-height)
+	background: $header-logo-bar-background
+	align-items: center
+	> div
+		align-items: center
+
+	#logo
+		a
+			display: block
+			height: size(16)
+			width: size(100)
+			@include contain-background($header-logo-bar-image)
+
+	#powered-by-ten
+		height: size(14)
+		width: size(120)
+		@include contain-background($header-logo-bar-powered-by-ten-image)

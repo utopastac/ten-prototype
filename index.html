@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <title>Testing</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+
+    <script type="text/javascript" src="js/handlebars-v4.0.11.js"></script>
+
+    <script id="basic-card-template" type="text/x-handlebars-template">
+      {{#if fullCard}}
+        <div class="card {{type}}" style="background-image: url({{image}})">
+      {{else}}
+        <div class="card {{type}}">
+          <div class="image" style="background-image: url({{image}})"></div>
+      {{/if}}
+        <div class="content">
+          <header>
+            {{#if fullCard}}
+              <img class="heart" src="images/icons/heart.svg" />
+            {{/if}}
+            <h1>{{title}}</h1>
+          </header>
+          <footer>
+            <div>
+              {{#if category}}
+                <p class="category">{{category}}</p>
+              {{/if}}
+              {{#with date}}
+                <ul>
+                  <li>{{day}}</li>
+                  <li>{{time}}</li>
+                </ul>
+              {{/with}}
+              {{#with meta}}
+                <ul>
+                  <li class="stars"><img src="images/icons/star.svg" /><img src="images/icons/star.svg" /><img src="images/icons/star.svg" /><img src="images/icons/star.svg" /><img src="images/icons/star.svg" /></li>
+                  <li>{{location}}</li>
+                  <li>{{type}}</li>
+                </ul>
+              {{/with}}
+              {{#if benefits}}
+                <p class="benefits">{{{benefits}}}</p>
+              {{/if}}
+              {{#with price}}
+                <ul>
+                  <li>{{{status}}}</li>
+                  <li>{{value}}</li>
+                </ul>
+              {{/with}}
+            </div>
+            {{#unless fullCard}}
+              <img class="heart" src="images/icons/heart.svg" />
+            {{/unless}}
+          </footer>
+        </div>
+        <h5 class="label" style="background: {{label.color}}; color: {{label.text}}">{{label.title}}</h5>
+      </div>
+    </script>     
+      
+  </head>
+
+  <body class = "desktop">
+    <section id="cards"></section>
+    <script type="text/javascript" src="js/App.js"></script>
+  </body>
+</html>

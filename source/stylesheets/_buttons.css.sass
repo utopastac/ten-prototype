@@ -1,0 +1,70 @@
+/* Reset `button` and button-style `input` default styles */
+input[type="submit"], input[type="reset"], input[type="button"], button
+  background: none
+  border: 0
+  color: inherit
+  /* cursor: default; */
+  font: inherit
+  line-height: normal
+  overflow: visible
+  padding: 0
+  -webkit-appearance: button /* for input */
+  -webkit-user-select: none /* for button */
+  -moz-user-select: none
+  -ms-user-select: none
+
+input::-moz-focus-inner, button::-moz-focus-inner
+  border: 0
+  padding: 0
+
+/* Make `a` like a button */
+[role="button"]
+  color: inherit
+  cursor: default
+  display: inline-block
+  text-align: center
+  text-decoration: none
+  white-space: pre
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+
+@mixin button-style($col: $cta)
+  @extend %button
+  border-radius: $button-border-radius
+  text-align: center
+  background: $col
+  color: white
+  padding: 0 units(4)
+  height: units(5)
+  line-height: units(5)
+
+%toggle-button
+  color: $cta
+  background-color: transparent
+  border: 1px solid $cta
+
+%toggled-button
+  color: white
+  background-color: $cta
+
+button, input[type="submit"], a.button, .button
+  @include button-style
+
+  &:hover
+    background-color: lighten($cta, 10%)
+
+  &:active
+    background-color: darken($cta, 5%)
+
+  &.secondary
+    @extend %toggle-button
+
+  &.active
+    color: white
+    background-color: $cta
+
+p + a.button
+  margin-top: size(16)
+  @include min($screen-l)
+    margin-top: size(24)

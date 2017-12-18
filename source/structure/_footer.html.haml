@@ -1,0 +1,17 @@
+- content = data[config[:client]].content
+%footer#main-footer
+	%div
+		%ul#footer-links
+			%li Privacy
+			%li Accessability
+			%li Terms & conditions
+			%li FAQ
+			%li Contact us
+		%ul#footer-numbers
+			- if content.footerNumbers
+				- content.footerNumbers.each do |number|
+					%li
+						%p= number.title
+						%p= number.number
+		- if content.footerCopy
+			%p#footer-copy= content.footerCopy

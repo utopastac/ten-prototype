@@ -1,0 +1,44 @@
+#article
+	@extend %content-column
+	> .image
+		height: units(40)
+		width: 100%
+
+	.content
+		background: white
+		margin-top: -7.2rem
+		padding: units(5) units(5) units(8) units(5)
+
+		> div
+			max-width: units(80)
+			margin: 0 auto
+
+		header
+			margin-bottom: units(5)
+
+			h1
+				margin-bottom: units(2)
+				@extend %display-4
+
+			p
+				@extend %display-0
+
+		section
+			img
+				width: 100%
+				margin: units(4) 0
+			p
+				@extend %body-2
+			h2
+				@extend %display-2
+			h3
+				@extend %display-1
+			h4
+				@extend %body-3
+			h5
+				@extend %body-2
+				@extend %bold
+			h6
+				@extend %caption
+				text-transform: uppercase
+				@extend %bold

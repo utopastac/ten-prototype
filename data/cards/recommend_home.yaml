@@ -1,0 +1,53 @@
+-
+  label:
+    title: "Mastercard Benefits"
+    color: "#141413"
+    text: "#FFFFFF"
+  type: "basic"
+  url: "/inspiration/travel/article"
+  title: "Duck and Rice"
+  image: "4.jpg"
+  meta:
+    stars: 4
+    location: "London"
+    type: "Chinese"
+  benefits: "This is thing, time two thing"
+-
+  label:
+      title: "Brand"
+      color: "#FFFFFF"
+      text: "#141413"
+  type: "full"
+  url: "/inspiration/travel/article"
+  title: "Currys PC World"
+  image: "3.jpg"
+  category: "Technology & gadgets"
+  benefits: "2 benefits available"
+-
+  label:
+    title: "Mastercard Benefits"
+    color: "#141413"
+    text: "#FFFFFF"
+  type: "basic"
+  url: "/inspiration/travel/article"
+  title: "Duck and Rice"
+  image: "2.jpg"
+  meta:
+    stars: 2
+    location: "London"
+    type: "Chinese"
+  benefits: "This is thing, time two thing"
+-
+  label:
+    title: "Mastercard Benefits"
+    color: "#141413"
+    text: "#FFFFFF"
+  type: "basic"
+  url: "/inspiration/travel/article"
+  title: "Duck and Rice"
+  image: "1.jpg"
+  meta:
+    stars: 5
+    location: "London"
+    type: "Chinese"
+  benefits: "This is thing, time two thing"

@@ -1,0 +1,38 @@
+#header-breadcrumb-bar
+	@extend %content-column
+	@extend %content-column-flex
+	background: $header-breadcrumb-bar-background
+	height: size($header-breadcrumb-bar-height)
+	justify-content: space-between
+
+	ul
+		flex: 1
+		display: flex
+		align-items: center
+
+	li
+		position: relative
+		color: $header-breadcrumb-bar-color
+		@extend %caption
+
+		a
+			color: $header-breadcrumb-bar-color
+
+		&:last-child
+			pointer-events: none
+
+		&:not(:last-child)
+			opacity: 0.6
+			margin-right: size(12)
+			padding-right: size(12)
+			cursor: pointer
+
+			&:hover
+				text-decoration: underline
+				opacity: 1
+
+			&:after
+				content: "/"
+				position: absolute
+				top: 0
+				right: -0.2rem

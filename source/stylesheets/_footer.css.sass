@@ -1,0 +1,42 @@
+footer#main-footer
+	min-height: units(12)
+	background: $footer-background
+	color: $footer-color
+	margin-top: units(5)
+	padding: units(5) 0 units(10) 0
+
+	#footer-links, #footer-numbers
+		display: flex
+		justify-content: center
+		align-items: center
+
+	#footer-links
+		margin-bottom: units(1)
+		li
+			@extend %body-1
+			margin: 0 units(2)
+
+	#footer-numbers
+		margin-bottom: units(2)
+		li
+			@extend %body-1
+			display: flex
+			align-items: center
+			margin: 0 units(1)
+
+			p
+				margin: 0
+
+				&:first-child
+					opacity: 0.7
+					margin-right: units(0.5)
+
+				&:last-child
+					@extend %bold
+
+	#footer-copy
+		text-align: center
+		max-width: size(700)
+		margin: 0 auto
+		@extend %caption
+		opacity: 0.7

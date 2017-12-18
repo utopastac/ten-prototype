@@ -1,0 +1,33 @@
+%section#header-logo-bar
+	%div
+		#logo
+			%a{:href => "/"}
+		#powered-by-ten
+
+%section#header-nav-bar
+	%nav
+		%ul#main-nav{:class => data[config[:client]].content.navTheme}
+			%li.travel
+				= link_to 'Travel', '/travel'
+			%li.dining
+				= link_to 'Dining', '/dining'
+			%li.entertainment
+				= link_to 'Entertainment', '/entertainment'
+			%li.events
+				= link_to 'Events', '/member-events'
+			%li.benefits
+				= link_to 'Benefits', '/benefits'
+
+		%ul#sub-nav{:class => data[config[:client]].content.navTheme}
+			-# %li.search
+			%li.profile
+				= link_to 'Profile', '/profile'
+			%li.menu
+				%a
+
+%section#header-breadcrumb-bar
+	%div
+		%ul
+			= breadcrumbs(current_page)
+
+%section#navigation-overlay

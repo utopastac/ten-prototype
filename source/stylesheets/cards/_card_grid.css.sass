@@ -1,0 +1,12 @@
+#card-grid
+	@extend %content-column
+	@extend %card-grid
+
+	> header
+		h3
+			@extend %display-1
+			margin-bottom: units(3)
+
+	&.zebra
+		padding: units(5) 0
+		background-color: darken($grey-lightest, 5%)

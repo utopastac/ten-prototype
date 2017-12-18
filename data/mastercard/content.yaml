@@ -1,0 +1,12 @@
+navTheme: "icons-light"
+homeHeroTitle: "Mastercard Benefits"
+homeHeroSubtitle: "This is your subtitle"
+homeHeroImage: "/images/bg.jpg"
+footerCopy: "Mastercard® Travel & Lifestyle Services are provided by Ten Lifestyle Management Ltd. No travel bookings are being made by Mastercard, nor is Mastercard acting as a travel agency or providing any travel consultation or advice, in connection with Mastercard Travel & Lifestyle Services.Mastercard is a registered trademark, and the circles design is a trademark, of Mastercard  International Incorporated, used under license."
+footerNumbers:
+  - title: "Number"
+    number: "0000-0000-0000-0000"
+  - title: "Second"
+    number: "0000-0000-0000-0000"
+travelSearchTitle: "Search and book flights, hotels, & cars"
+travelSearchSubtitle: "Select one or many"

@@ -1,0 +1,23 @@
+.hero
+	@extend %content-column
+	background: #F4F4F4
+	position: relative
+	margin-bottom: units(8)
+	
+	.image
+		@include cover-background($header-logo-bar-image)
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+
+	.content
+		padding: size(80) 0
+		color: white
+
+		h1
+			@extend %display-4
+
+		h2
+			@extend %display-1

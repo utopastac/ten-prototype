@@ -1,0 +1,138 @@
+$baseSize: 16
+
+%light
+  font-family: $font-light
+  font-weight: normal
+
+%regular
+  font-family: $font-regular
+  font-weight: normal
+
+%book
+  font-family: $font-book
+  font-weight: normal
+
+%medium
+  font-family: $font-medium
+  font-weight: normal
+
+%bold
+  font-family: $font-medium
+  font-weight: normal
+
+h1, h2, h3, h4, h5, h6, li, ul, html, body
+  margin: 0
+  padding: 0
+  border: 0
+
+$sizing: ($units / 16) * 100
+
+html
+  font-size: 62.5%//$sizing + unquote("%")
+  @extend %regular
+
+@mixin fontSize($size, $line)
+  font-size: $size / 10 + rem
+  line-height: $line / $size
+
+body
+  @extend %regular
+  -webkit-font-smoothing: antialiased
+  font-size: 100%
+  color: $text-colour
+
+%display-4
+  @extend %light
+  @include fontSize(38, 40)
+
+  @include min($screen-m)
+    @include fontSize(44, 46)
+
+  @include min($screen-l)
+    @include fontSize(54, 56)
+
+%display-3
+  @extend %light
+  @include fontSize(32, 34)
+
+  @include min($screen-m)
+    @include fontSize(34, 36)
+
+  @include min($screen-l)
+    @include fontSize(40, 44)
+
+%display-2
+  @extend %light
+  @include fontSize(25, 27)
+
+  @include min($screen-l)
+    @include fontSize(30, 32)
+
+%display-1
+  @extend %light
+  @include fontSize(24, 32)
+
+%display-0
+  @extend %book
+  @include fontSize(22, 32)
+    
+
+%body-3
+  @extend %regular
+  @include fontSize(18, 24)
+
+  @include min($screen-l)
+    @include fontSize(23, 29)
+
+%body-2
+  @extend %book
+  @include fontSize(16, 24)
+
+%body-1
+  @extend %book
+  @include fontSize(14, 20)
+
+%caption
+  @extend %book
+  @include fontSize(12, 16)
+
+%button
+  @extend %body-1
+  @extend %medium
+
+li
+  color: inherit
+  
+p
+  margin: 0
+  color: inherit
+  @extend %body-1
+
+  + p
+    margin-top: size(16)
+
+  &.small
+    @extend %body-1
+
+  a
+    text-decoration: underline
+    @extend %bold
+
+strong
+  letter-spacing: inherit
+  @extend %medium
+
+  &.warning
+    color: $red
+
+blockquote
+  margin: 0
+  padding: 0 1rem 
+
+a
+  text-decoration: none
+  color: $text-colour
+
+h1, h2, h3, h4, h5, h6 p
+  a
+    color: inherit

@@ -1,0 +1,24 @@
+-
+  label:
+    title: "Article"
+    color: "#FFFFFF"
+    text: "#141413"
+  type: "article"
+  url: "/inspiration/travel/article"
+  title: "How to spend the perfect summer's day in Venice"
+  image: "5.jpg"
+  price:
+    status: "12/04/2017"
+    value: "travel"
+-
+  label:
+    title: "Article"
+    color: "#FFFFFF"
+    text: "#141413"
+  type: "article"
+  url: "/inspiration/travel/article"
+  title: "How to spend the perfect summer's day in Venice"
+  image: "6.jpg"
+  price:
+    status: "12/04/2017"
+    value: "travel"

@@ -1,0 +1,63 @@
+@mixin contain-background($image)
+  background-size: contain
+  background-repeat: no-repeat
+  background-image: $image
+  background-position-y: center 
+
+@mixin size-background($image, $size)
+  background-size: $size $size
+  background-repeat: no-repeat
+  background-image: $image
+  background-position: center center
+
+@mixin cover-background($image)
+  background-size: cover
+  background-repeat: no-repeat
+  background-image: $image
+  background-position: center center
+
+@function size($size)
+  @return #{($size / 10)}rem
+
+@function units($num)
+  @return #{($num * $units) / 10}rem
+
+%block-link
+  display: block
+
+%content-column
+  > *:not(.full-width)
+    flex: 1
+    max-width: 1200px
+    margin: 0 auto
+    position: relative
+    
+%content-column-flex
+  display: flex
+  flex-wrap: wrap
+  > *:not(.full-width)
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+%card-grid
+  margin-bottom: units(5)
+  
+  > ul
+    margin-top: size(32)
+    width: 100%
+    display: grid
+    grid-column-gap: size(16)
+    grid-row-gap: size(16)
+
+    @include min($screen-s)
+      margin-top: size(40)
+      grid-column-gap: size(40)
+      grid-row-gap: size(40)
+      grid-template-columns: repeat(2, 1fr)
+
+    @include min($screen-m)
+      grid-template-columns: repeat(3, 1fr)
+
+    @include min($screen-l)
+      grid-template-columns: repeat(4, 1fr)

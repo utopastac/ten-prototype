@@ -1,0 +1,33 @@
+= link_to url, :class => "card #{type}" do
+	.image{:style => "background-image: url(/images/#{image});"}
+	%h5{:class => "label", :style => "background: #{label.color}; color: #{label.text}"}
+		= label.title
+	.content
+		- if type == "full"
+			.heart
+		%h1= title
+		%footer
+			%div
+				- if locals.has_key?("category")
+					%p.category= category
+				- if locals.has_key?("data")
+					%ul
+						%li= date.day
+						%li= date.time
+				- if locals.has_key?("meta")
+					%ul
+						%li.stars
+							- meta.stars.times do |x|
+								%div.full-star
+							- (5-meta.stars).times do |x|
+								%div.empty-star
+						%li= meta.location
+						%li= meta.type
+				- if locals.has_key?("benefits")
+					%p.benefits= benefits
+				- if locals.has_key?("price")
+					%ul
+						%li= price.status
+						%li= price.value
+			- if !type == "full"
+				.heart
