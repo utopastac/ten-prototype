@@ -1,0 +1,33 @@
+# | icons | light | dark
+navTheme: "icons light"
+homeHeroTitle: "Great minds discuss ideas; average minds discuss events; small minds discuss people."
+homeHeroSubtitle: "Eleanor Roosevelt"
+homeHeroImage: "/images/ten-bg.png"
+travelSearchTitle: "Search and book flights, hotels, & cars"
+travelSearchSubtitle: "Select one or many"
+sections:
+  - type: "travel"
+    title: "Travel"
+    url: "/travel"
+  - type: "dining"
+    title: "Dining"
+    url: "/dining"
+  - type: "entertainment"
+    title: "Entertainment"
+    url: "/entertainment"
+  - type: "events"
+    title: "Member events"
+    url: "/member-events"
+  - type: "benefits"
+    title: "Benefits"
+    url: "/benefits"
+cards:
+  labels:
+    benefits:
+      title: "Ten Special Benefits"
+      color: "#672682"
+      text: "#FFFFFF"
+    article:
+      title: "Article"
+      color: "#FFFFFF"
+      text: "#141413"

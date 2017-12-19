@@ -2,9 +2,6 @@
 	@extend %content-column
 	background: #F4F4F4
 	position: relative
-	margin-bottom: units(4)
-	@include min($screen-m)
-		margin-bottom: units(8)
 	
 	.image
 		@include cover-background($header-logo-bar-image)
@@ -17,9 +14,11 @@
 	.content
 		padding: size(80) 0
 		color: white
+		max-width: units(70)
 
 		h1
 			@extend %display-4
+			margin-bottom: units(2)
 
 		h2
 			@extend %display-1

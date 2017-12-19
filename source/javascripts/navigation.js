@@ -6,10 +6,10 @@
 	navigationMenuClose.click(closeMainMenu);
 
 	function openMainMenu(){
-		navigationMenu.slideToggle();
+		navigationMenu.slideToggle(240);
 	}
 
 	function closeMainMenu(){
-		navigationMenu.slideToggle();
+		navigationMenu.slideToggle(300);
 	}
 })();

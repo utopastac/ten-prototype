@@ -15,13 +15,7 @@
 		padding-left: units(10)
 
 	.close
-		position: absolute
-		top: units(5)
-		right: units(5)
-		width: units(3)
-		height: units(3)
-		@include contain-background($icon-close-light)
-		cursor: pointer
+		@include close-button($icon-close-light, units(5), units(5))
 
 	ul.main-nav
 		flex: 1

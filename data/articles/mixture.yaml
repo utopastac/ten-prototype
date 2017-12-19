@@ -1,24 +1,144 @@
 -
-  label:
-    title: "Article"
-    color: "#FFFFFF"
-    text: "#141413"
+  label: "article"
   type: "article"
   url: "/inspiration/travel/article"
   title: "How to spend the perfect summer's day in Venice"
-  image: "5.jpg"
+  image: "scene/14.jpg"
   price:
     status: "12/04/2017"
     value: "travel"
 -
-  label:
-    title: "Article"
-    color: "#FFFFFF"
-    text: "#141413"
+  label: "article"
   type: "article"
   url: "/inspiration/travel/article"
   title: "How to spend the perfect summer's day in Venice"
-  image: "6.jpg"
+  image: "scene/13.jpg"
+  price:
+    status: "12/04/2017"
+    value: "travel"
+-
+  label: "article"
+  type: "article"
+  url: "/inspiration/travel/article"
+  title: "How to spend the perfect summer's day in Venice"
+  image: "scene/25.jpg"
+  price:
+    status: "12/04/2017"
+    value: "travel"
+-
+  label: "article"
+  type: "article"
+  url: "/inspiration/travel/article"
+  title: "How to spend the perfect summer's day in Venice"
+  image: "scene/24.jpg"
+  price:
+    status: "12/04/2017"
+    value: "travel"
+-
+  label: "article"
+  type: "article"
+  url: "/inspiration/travel/article"
+  title: "How to spend the perfect summer's day in Venice"
+  image: "scene/23.jpg"
+  price:
+    status: "12/04/2017"
+    value: "travel"
+-
+  label: "article"
+  type: "article"
+  url: "/inspiration/travel/article"
+  title: "How to spend the perfect summer's day in Venice"
+  image: "scene/22.jpg"
+  price:
+    status: "12/04/2017"
+    value: "travel"
+-
+  label: "article"
+  type: "article"
+  url: "/inspiration/travel/article"
+  title: "How to spend the perfect summer's day in Venice"
+  image: "scene/21.jpg"
+  price:
+    status: "12/04/2017"
+    value: "travel"
+-
+  label: "article"
+  type: "article"
+  url: "/inspiration/travel/article"
+  title: "How to spend the perfect summer's day in Venice"
+  image: "scene/20.jpg"
+  price:
+    status: "12/04/2017"
+    value: "travel"
+-
+  label: "article"
+  type: "article"
+  url: "/inspiration/travel/article"
+  title: "How to spend the perfect summer's day in Venice"
+  image: "scene/56.jpg"
+  price:
+    status: "12/04/2017"
+    value: "travel"
+-
+  label: "article"
+  type: "article"
+  url: "/inspiration/travel/article"
+  title: "How to spend the perfect summer's day in Venice"
+  image: "scene/57.jpg"
+  price:
+    status: "12/04/2017"
+    value: "travel"
+-
+  label: "article"
+  type: "article"
+  url: "/inspiration/travel/article"
+  title: "How to spend the perfect summer's day in Venice"
+  image: "scene/58.jpg"
+  price:
+    status: "12/04/2017"
+    value: "travel"
+-
+  label: "article"
+  type: "article"
+  url: "/inspiration/travel/article"
+  title: "How to spend the perfect summer's day in Venice"
+  image: "scene/59.jpg"
+  price:
+    status: "12/04/2017"
+    value: "travel"
+-
+  label: "article"
+  type: "article"
+  url: "/inspiration/travel/article"
+  title: "How to spend the perfect summer's day in Venice"
+  image: "scene/60.jpg"
+  price:
+    status: "12/04/2017"
+    value: "travel"
+-
+  label: "article"
+  type: "article"
+  url: "/inspiration/travel/article"
+  title: "How to spend the perfect summer's day in Venice"
+  image: "scene/61.jpg"
+  price:
+    status: "12/04/2017"
+    value: "travel"
+-
+  label: "article"
+  type: "article"
+  url: "/inspiration/travel/article"
+  title: "How to spend the perfect summer's day in Venice"
+  image: "scene/62.jpg"
+  price:
+    status: "12/04/2017"
+    value: "travel"
+-
+  label: "article"
+  type: "article"
+  url: "/inspiration/travel/article"
+  title: "How to spend the perfect summer's day in Venice"
+  image: "scene/63.jpg"
   price:
     status: "12/04/2017"
     value: "travel"

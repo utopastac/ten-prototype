@@ -1,0 +1,41 @@
+-
+  label: "benefits"
+  type: "basic"
+  url: "/inspiration/travel/article"
+  title: "Duck and Rice"
+  image: "scene/29.jpg"
+  meta:
+    stars: 4
+    location: "London"
+    type: "Chinese"
+  benefits: "This is thing, time two thing"
+-
+  label: "benefits"
+  type: "basic"
+  url: "/inspiration/travel/article"
+  title: "Duck and Rice"
+  image: "scene/31.jpg"
+  meta:
+    stars: 2
+    location: "London"
+    type: "Chinese"
+  benefits: "This is thing, time two thing"
+-
+  label: "benefits"
+  type: "full"
+  url: "/inspiration/travel/article"
+  title: "Currys PC World"
+  image: "scene/30.jpg"
+  category: "Technology & gadgets"
+  benefits: "2 benefits available"
+-
+  label: "benefits"
+  type: "basic"
+  url: "/inspiration/travel/article"
+  title: "Duck and Rice"
+  image: "scene/32.jpg"
+  meta:
+    stars: 5
+    location: "London"
+    type: "Chinese"
+  benefits: "This is thing, time two thing"

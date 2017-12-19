@@ -4,7 +4,10 @@
 			%div
 				%h2= data[config[:client]].content.travelSearchTitle
 				%h4= data[config[:client]].content.travelSearchSubtitle
-			.button.secondary Ask a travel & lifestyle manager
+			.button.secondary.overlay-launcher
+				Ask a travel & lifestyle manager
+				.overlay-content
+					%h1 WOOOOOOF
 		%ul#travel-search-buttons
 			= partial "shared/travel/search_button", :locals => { :type => "flights", :title => "Flights", :elem => "search-field-flights" }
 			= partial "shared/travel/search_button", :locals => { :type => "hotels", :title => "Hotels", :elem => "search-field-hotels" }

@@ -1,12 +1,13 @@
 #article
 	@extend %content-column
-	> .image
-		height: units(40)
-		width: 100%
+	background: white
+
+	.image
+		height: 80vh
+		background-size: cover
+		background-position: center center
 
 	.content
-		background: white
-		margin-top: -7.2rem
 		padding: units(8) units(5)
 
 		> div
@@ -14,14 +15,13 @@
 			margin: 0 auto
 
 		header
-			margin-bottom: units(5)
 
 			h1
 				margin-bottom: units(2)
 				@extend %display-4
 
 			p
-				@extend %display-0
+				@extend %body-3
 
 		section
 			img
@@ -31,10 +31,13 @@
 				@extend %body-2
 			h2
 				@extend %display-2
+				margin-bottom: units(3)
 			h3
 				@extend %display-1
+				margin-bottom: units(2)
 			h4
 				@extend %body-3
+				margin-bottom: units(1)
 			h5
 				@extend %body-2
 				@extend %bold

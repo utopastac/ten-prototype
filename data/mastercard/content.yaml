@@ -1,7 +1,8 @@
-#icons | light | dark
+# | icons | light | dark
 navTheme: "light"
+poweredByTen: true
 homeHeroTitle: "Mastercard Benefits"
-homeHeroSubtitle: "This is your subtitle"
+homeHeroSubtitle: "Welcome to Mastercard® Travel & Lifestyle Services - where peace of mind and value are guaranteed."
 homeHeroImage: "/images/bg.jpg"
 footerCopy: "Mastercard® Travel & Lifestyle Services are provided by Ten Lifestyle Management Ltd. No travel bookings are being made by Mastercard, nor is Mastercard acting as a travel agency or providing any travel consultation or advice, in connection with Mastercard Travel & Lifestyle Services.Mastercard is a registered trademark, and the circles design is a trademark, of Mastercard  International Incorporated, used under license."
 footerNumbers:
@@ -12,18 +13,19 @@ footerNumbers:
 travelSearchTitle: "Search and book flights, hotels, & cars"
 travelSearchSubtitle: "Select one or many"
 sections:
-    - class: "travel"
-      title: "Travel"
-      url: "/travel"
-    - class: "dining"
-      title: "Dining"
-      url: "/dining"
-    - class: "entertainment"
-      title: "Entertainment"
-      url: "/entertainment"
-    - class: "member-events"
-      title: "Member events"
-      url: "/member-events"
-    - class: "benefits"
-      title: "Benefits"
-      url: "/benefits"
+  - type: "travel"
+    title: "Travel"
+    url: "/travel"
+  - type: "dining"
+    title: "Dining"
+    url: "/dining"
+cards:
+  labels:
+    benefits:
+      title: "Mastercard Benefits"
+      color: "#141413"
+      text: "#FFFFFF"
+    article:
+      title: "Article"
+      color: "#FFFFFF"
+      text: "#141413"

@@ -25,6 +25,15 @@ $screen-xxl: 1400px
   background-image: $image
   background-position: center center
 
+@mixin close-button($image, $x, $y)
+  top: $y
+  right: $x
+  position: absolute
+  width: units(3)
+  height: units(3)
+  @include contain-background($image)
+  cursor: pointer
+
 @function size($size)
   @return #{($size / 10)}rem
 
@@ -44,6 +53,11 @@ $units: 8
     max-width: 1200px
     margin: 0 auto
     position: relative
+  > .full-width
+    padding: 0
+    margin-left: -1.6rem
+    margin-right: -1.6rem
+    width: calc(100% + 3.2rem) !important
     
 %content-column-flex
   display: flex
@@ -51,7 +65,6 @@ $units: 8
   > *:not(.full-width)
     display: flex
     flex-wrap: wrap
-    justify-content: space-between
 
 %card-grid
   margin-bottom: units(5)
@@ -62,6 +75,24 @@ $units: 8
     display: grid
     grid-column-gap: units(2)
     grid-row-gap: units(2)
+
+    .card
+      margin-bottom: units(3)
+
+      &.article
+        &:nth-child(-n+2)
+          @include min($screen-l)
+            grid-column: span 2
+            flex-direction: row
+
+            .content
+              flex: 0.4
+
+            h1
+              margin-bottom: units(2)
+
+            .benefits
+              justify-content: center
 
     @include min($screen-s)
       margin-top: units(5)
@@ -74,3 +105,38 @@ $units: 8
 
     @include min($screen-l)
       grid-template-columns: repeat(4, 1fr)
+
+%card-list
+  margin-bottom: units(5)
+
+  > ul
+    margin-top: units(4)
+    width: 100%
+    display: grid
+    grid-column-gap: units(2)
+    grid-row-gap: units(2)
+
+    
+
+    .card.article:nth-child(6n+1)
+      @include min($screen-l)
+        grid-column: span 2
+        flex-direction: row
+
+        .content
+          flex: 0.4
+
+        h1
+          margin-bottom: units(2)
+
+        .benefits
+          justify-content: center
+
+    @include min($screen-s)
+      margin-top: units(5)
+      grid-column-gap: units(5)
+      grid-row-gap: units(5)
+      grid-template-columns: repeat(2, 1fr)
+
+    @include min($screen-m)
+      grid-template-columns: repeat(3, 1fr)

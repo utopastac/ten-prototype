@@ -2,3 +2,4 @@
 //= require jquery
 //= require travel_search
 //= require navigation
+//= require overlay

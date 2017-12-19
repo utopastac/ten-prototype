@@ -1,0 +1,4 @@
+#article-list{:class => locals.has_key?("type") ? type : "" }
+	%ul
+		- total.times do |x|
+			= partial "shared/cards/card", :locals => cards[x]

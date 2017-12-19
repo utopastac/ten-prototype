@@ -1,0 +1,37 @@
+#overlay
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	z-index: 1000000
+
+#overlay-bg
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background: rgba($black, 0.7)
+	cursor: pointer
+
+#overlay-content-container
+	position: absolute
+	top: units(3)
+	left: units(3)
+	right: units(3)
+	bottom: units(3)
+	padding: units(4)
+	max-width: 1200px
+	margin: 0 auto
+	background: white
+	overflow-y: scroll
+
+	.close
+		@include close-button($icon-close-dark, units(4), units(4))
+
+#overlay-content
+
+.overlay-launcher .overlay-content
+	display: none

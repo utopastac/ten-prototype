@@ -2,7 +2,8 @@
 	%div
 		#logo
 			%a{:href => "/"}
-		#powered-by-ten
+		-if data[config[:client]].content.poweredByTen
+			#powered-by-ten
 
 %section#header-nav-bar
 	%nav
@@ -11,7 +12,7 @@
 		%ul#sub-nav{:class => data[config[:client]].content.navTheme}
 			-# %li.search
 			%li.profile
-				= link_to 'Profile', '/profile'
+				= link_to '', '/profile'
 			%li#main-menu-button
 				%a
 

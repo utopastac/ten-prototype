@@ -1,7 +1,8 @@
 = link_to url, :class => "card #{type}" do
 	.image{:style => "background-image: url(/images/#{image});"}
-	%h5{:class => "label", :style => "background: #{label.color}; color: #{label.text}"}
-		= label.title
+	- labelData = data[config[:client]].content.cards.labels[label]
+	%h5{:class => "label", :style => "background: #{labelData.color}; color: #{labelData.text}"}
+		= labelData.title
 	.content
 		- if type == "full"
 			.heart
