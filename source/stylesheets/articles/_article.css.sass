@@ -8,13 +8,30 @@
 		background-position: center center
 
 	.content
-		padding: units(8) units(5)
+		padding: units(7) units(5)
 
 		> div
 			max-width: units(80)
 			margin: 0 auto
 
 		header
+
+			.meta
+				display: flex
+				align-items: center
+				@extend %body-1
+				margin-bottom: units(2)
+
+				.profile
+					width: units(7)
+					height: units(7)
+					border-radius: 500px
+					background-size: cover
+					background-position: center center
+					margin-right: units(1)
+
+				.author
+					@extend %bold
 
 			h1
 				margin-bottom: units(2)
