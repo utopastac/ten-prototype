@@ -116,3 +116,44 @@ a
 h1, h2, h3, h4, h5, h6 p
   a
     color: inherit
+
+%typography-hierarchy
+  p
+    @extend %display-0
+
+  p, ul
+    + h2, + h3
+      margin-top: units(4)
+    + h4, + h5
+      margin-top: units(3)
+  h1
+    @extend %display-4
+    margin-bottom: units(4)
+  h2
+    @extend %display-3
+    margin-bottom: units(3)
+  h3
+    @extend %display-2
+    @extend %medium
+    margin-bottom: units(2)
+  h4
+    @extend %display-1
+    @extend %medium
+    margin-bottom: units(1)
+  h5
+    @extend %display-0
+    @extend %bold
+  h6
+    @extend %caption
+    text-transform: uppercase
+    @extend %bold
+  ul
+    padding-left: units(4)
+    li
+      @extend %display-0
+      list-style-type: circle
+  hr
+    height: 1
+    border: none
+    background: $grey-light
+    margin: units(4) 0 units(3) 0

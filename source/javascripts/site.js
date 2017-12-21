@@ -2,7 +2,7 @@
 //= require jquery
 //= require plugins/found_plugins
 //= require plugins/quo
-//= require utils
+//= require Utils
 //= require plugins/jquery.touchSlide
 //= require travel_search
 //= require navigation

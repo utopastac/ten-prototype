@@ -1,12 +1,17 @@
-$gallery-height: 70vh
+$gallery-height: 60vh
+$gallery-slide-width: 80
+$gallery-remainder: (100-$gallery-slide-width) / 2
 
 #details-gallery
-	background: $grey-light
+	background: $grey-lightest
+	border-bottom: $light-border
 	position: relative
+	-webkit-user-select: none
+	user-select: none
 	> div
 		height: $gallery-height
-		width: 90vw
-		margin-left: 5vw
+		width: $gallery-slide-width + vw
+		margin-left: $gallery-remainder + vw
 		position: relative
 		> div
 			position: relative
@@ -39,10 +44,9 @@ $gallery-height: 70vh
 	.arrow
 		position: absolute
 		top: 0
-		width: 5vw
+		width: $gallery-remainder + vw
 		height: 100%
-		background: rgba(white, 0)
-		cursor: pointer
+		background: rgba(white, 0.3)
 		@include animate(0.1s)
 
 		> div
@@ -53,19 +57,20 @@ $gallery-height: 70vh
 			width: units(5)
 			height: units(5)
 			border-radius: 500px
-			background-color: rgba(white, 0.8) 
+			background-color: rgba(white, 0) 
 			background-position: center center
 			background-repeat: no-repeat
 			background-size: auto 50%
 			z-index: 100000
 			@include animate(0.1s)
 
-		&:hover
-			background-color: white
-			>	div
-				background-color: white
-				width: units(9)
-				height: units(9)
+		&:not(&.active)
+			cursor: pointer
+			&:hover
+				background-color: rgba(white, 1)
+				>	div
+					width: units(9)
+					height: units(9)
 
 		&.active
 			>	div

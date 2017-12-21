@@ -1,0 +1,62 @@
+#basket-summary
+	border: $light-border
+	background: white
+	flex: 0.3
+	margin-top: -8rem
+
+	header
+		text-align: center
+		h2
+			@extend %display-0
+			@extend %bold
+			padding: units(3) units(2)
+			border-bottom: $light-border
+
+	.content
+		padding: units(3)
+
+	.date-picker
+		display: flex
+		justify-content: space-between
+		@extend %display-0
+
+		> div
+			flex: 1
+			&:first-child
+				text-align: left
+				position: relative
+
+				&:after
+					content: "→"
+					font-size: 1.6rem
+					position: absolute
+					top: 50%
+					transform: translateY(-50%)
+					right: -0.8rem
+
+			&:last-child
+				text-align: right
+
+		h5
+			@extend %display-0
+			@extend %bold
+		p
+			@extend %display-0
+			opacity: 0.7
+
+	.payment-option
+		&:first-child
+			margin-bottom: units(3)
+		h5
+			@extend %display-0
+			@extend %bold
+		p
+			margin-bottom: -1.6rem
+			@extend %body-1
+			color: rgba($black, 0.7)
+			span
+				@extend %display-2
+				color: rgba($black, 1)
+
+	.button
+		margin-top: units(3)

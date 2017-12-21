@@ -1,0 +1,10 @@
+---
+title: Details
+---
+
+= partial "shared/details/details_gallery", :locals => data.details.car
+= partial "shared/details/details_header", :locals => data.details.car
+#details-main
+	%div
+		= partial "shared/details/details_content", :locals => data.details.car
+		= partial "shared/details/basket_summary_car", :locals => data.details.car

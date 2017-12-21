@@ -4,3 +4,7 @@ title: Details
 
 = partial "shared/details/details_gallery", :locals => data.details.hotel
 = partial "shared/details/details_header", :locals => data.details.hotel
+#details-main
+	%div
+		= partial "shared/details/details_content", :locals => data.details.hotel
+		= partial "shared/details/basket_summary_hotel", :locals => data.details.hotel
