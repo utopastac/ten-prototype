@@ -17,11 +17,7 @@
 						%li= date.time
 				- if locals.has_key?("meta")
 					%ul
-						%li.stars
-							- meta.stars.times do |x|
-								%div.full-star
-							- (5-meta.stars).times do |x|
-								%div.empty-star
+						= partial "shared/ui/stars", :locals => { :stars => meta.stars }
 						%li= meta.location
 						%li= meta.type
 				- if locals.has_key?("benefits")

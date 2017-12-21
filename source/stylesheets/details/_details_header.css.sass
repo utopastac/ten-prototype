@@ -1,0 +1,25 @@
+#details-header
+	@extend %content-column
+	padding: units(5) 0
+	border-bottom: $light-border
+
+	h1
+		@extend %display-4
+
+	> div
+		> div
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin-bottom: units(2)
+
+			img
+				width: units(4)
+
+		ul
+			display: flex
+			align-items: center
+			@extend %body-1
+
+			li.stars
+				margin-right: units(1)

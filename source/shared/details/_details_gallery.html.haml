@@ -1,0 +1,13 @@
+#details-gallery
+	%div
+		%div{"data-touch-slide" => '{"prevArrowSelector":"#prev-arrow", "nextArrowSelector":"#next-arrow", "navSelector":"#gallery-nav li"}'}
+			- images.each do |image|
+				.slide{:style => "background-image: url(/images/#{image.url});"}
+	%ul#gallery-nav
+		- images.each do |image|
+			%li
+
+	%a#prev-arrow.arrow
+		%div
+	%a#next-arrow.arrow
+		%div

@@ -1,0 +1,8 @@
+#details-header
+	%div
+		%div
+			%h1= title
+			= image_tag "icons/heart.svg"
+		%ul
+			= partial "shared/ui/stars", :locals => { :stars => meta.stars }
+			%li= meta.details

@@ -1,7 +1,7 @@
 -
   label: "benefits"
   type: "basic"
-  url: "/inspiration/travel/article"
+  url: "/travel/hotels/search/details"
   title: "Duck and Rice"
   image: "scene/4.jpg"
   meta:
@@ -12,7 +12,7 @@
 -
   label: "benefits"
   type: "full"
-  url: "/inspiration/travel/article"
+  url: "/travel/hotels/search/details"
   title: "Currys PC World"
   image: "scene/3.jpg"
   category: "Technology & gadgets"
@@ -20,7 +20,7 @@
 -
   label: "benefits"
   type: "basic"
-  url: "/inspiration/travel/article"
+  url: "/travel/hotels/search/details"
   title: "Duck and Rice"
   image: "scene/2.jpg"
   meta:
@@ -31,7 +31,7 @@
 -
   label: "benefits"
   type: "basic"
-  url: "/inspiration/travel/article"
+  url: "/travel/hotels/search/details"
   title: "Duck and Rice"
   image: "scene/1.jpg"
   meta:
