@@ -30,16 +30,31 @@
 		justify-content: center
 		cursor: pointer
 		flex-wrap: wrap
+		position: relative
 
 		&:not(:last-child)
-			margin-right: units(1)
+			margin-right: units(2)
+
+			&:after
+				content: ""
+				@include contain-background($icon-plus-dark)
+				position: absolute
+				width: units(1)
+				height: units(1)
+				right: -1.2rem
+				top: 50%
+				transform: translateY(-50%)
 
 		@include min($screen-m)
 			width: units(20)
-			height: units(20)
+			height: units(14)
 
 			&:not(:last-child)
-				margin-right: units(2)
+				margin-right: units(4)
+				&:after
+					width: units(2)
+					height: units(2)
+					right: -2.4rem
 
 		&.active
 			background-color: white
@@ -74,7 +89,7 @@
 			align-items: center
 
 			@include min($screen-m)
-				font-size: 2.4rem
+				font-size: 2rem
 
 				&:before
 					content: ""

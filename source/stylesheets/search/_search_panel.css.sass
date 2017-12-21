@@ -1,0 +1,44 @@
+@mixin searchPanelBg($image)
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), $image
+	background-size: auto, cover
+	background-position: center center, center center
+
+#search-panel
+	@extend %content-column
+	@extend %content-column-flex
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), $search-panel-bg 
+	min-height: units(40)
+	background-size: auto, cover
+	background-position: auto, center center
+
+	&.dining
+		@include searchPanelBg($search-panel-bg-dining)
+	&.entertainment
+		@include searchPanelBg($search-panel-bg-entertainment)
+	&.events
+		@include searchPanelBg($search-panel-bg-events)
+	&.articles
+		@include searchPanelBg($search-panel-bg-articles)
+	&.benefits
+		@include searchPanelBg($search-panel-bg-benefits)
+
+	> div
+		align-items: center
+		justify-content: center
+		flex: 1
+
+		> div
+			text-align: center
+			flex: 1
+			max-width: units(50)
+
+		h3
+			@extend %display-2
+			color: $search-panel-color
+			margin-bottom: units(2)
+
+		input
+			@extend %body-2
+			padding: 0 units(1)
+			margin: 0 auto
+			width: 100%

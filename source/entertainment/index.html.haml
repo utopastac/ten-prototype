@@ -2,4 +2,5 @@
 title: Entertainment
 ---
 
+= partial "shared/search/search_panel", :locals => { :type => "entertainment", :title => "Search Entertainment" }
 = partial "shared/articles/article_grid", :locals => { :cards => data.articles.entertainment,  :title => "Recommended entertainment articles", :total => 6 }
