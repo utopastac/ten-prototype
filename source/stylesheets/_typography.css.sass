@@ -24,6 +24,7 @@ h1, h2, h3, h4, h5, h6, li, ul, html, body
   margin: 0
   padding: 0
   border: 0
+  font-weight: normal
 
 $sizing: ($units / 16) * 100
 
@@ -46,54 +47,33 @@ body
   @include fontSize(38, 40)
 
   @include min($screen-m)
-    @include fontSize(44, 46)
+    @include fontSize(44, 48)
 
   @include min($screen-l)
     @include fontSize(54, 56)
 
 %display-3
-  @extend %light
-  @include fontSize(32, 34)
-
-  @include min($screen-m)
-    @include fontSize(34, 36)
-
-  @include min($screen-l)
-    @include fontSize(40, 44)
+  @include fontSize(32, 40)
 
 %display-2
-  @extend %light
-  @include fontSize(25, 27)
-
-  @include min($screen-l)
-    @include fontSize(30, 32)
-
-%display-1
-  @extend %light
   @include fontSize(24, 32)
 
+%display-1
+  @include fontSize(19, 32)
+
 %display-0
-  @extend %book
-  @include fontSize(22, 32)
-    
-
-%body-3
-  @extend %regular
-  @include fontSize(18, 24)
-
-  @include min($screen-l)
-    @include fontSize(23, 29)
+  @include fontSize(16, 24)
 
 %body-2
-  @extend %book
-  @include fontSize(16, 24)
+  @extend %medium
+  @include fontSize(14, 20)
 
 %body-1
   @extend %book
   @include fontSize(14, 20)
 
 %caption
-  @extend %book
+  @extend %medium
   @include fontSize(12, 16)
 
 %button
