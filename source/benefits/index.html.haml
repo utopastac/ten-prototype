@@ -3,4 +3,5 @@ title: Benefits
 ---
 
 = partial "shared/search/search_panel", :locals => { :type => "benefits", :title => "Search Benefits" }
+= partial "shared/cards/card_grid", :locals => { :cards => data.cards.recommend_benefits, :title => "New benefits", :type => "highlight" }
 = partial "shared/articles/article_grid", :locals => { :cards => data.articles.benefits,  :title => "Recommended benefits articles", :total => 6 }

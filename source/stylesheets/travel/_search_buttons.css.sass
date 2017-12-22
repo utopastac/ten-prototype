@@ -36,14 +36,14 @@
 			margin-right: units(2)
 
 			&:after
-				content: ""
-				@include contain-background($icon-plus-dark)
-				position: absolute
-				width: units(1)
-				height: units(1)
-				right: -1.2rem
-				top: 50%
-				transform: translateY(-50%)
+				// content: ""
+				// @include contain-background($icon-plus-dark)
+				// position: absolute
+				// width: units(1)
+				// height: units(1)
+				// right: -1.2rem
+				// top: 50%
+				// transform: translateY(-50%)
 
 		@include min($screen-m)
 			width: units(20)
@@ -55,12 +55,6 @@
 					width: units(2)
 					height: units(2)
 					right: -2.4rem
-
-		&.active
-			background-color: white
-
-			.button
-				@extend %toggled-button
 
 		&.flights
 			.title:before
@@ -74,8 +68,8 @@
 			.title:before
 				@include contain-background($icon-cars)
 
-		&:hover
-			background-color: white
+		&:hover, &.active
+			background-color: $grey-lightest
 
 			.button
 				@extend %toggled-button

@@ -1,0 +1,44 @@
+-
+  label: "benefits"
+  type: "basic"
+  url: "/travel/cars/search/details"
+  title: "Duck and Rice"
+  image: "scene/46.jpg"
+  meta:
+    stars: 4
+    location: "London"
+    type: "Chinese"
+  benefits: "This is thing, time two thing"
+-
+  label: "benefits"
+  type: "basic"
+  url: "/travel/cars/search/details"
+  title: "Duck and Rice"
+  image: "scene/41.jpg"
+  meta:
+    stars: 4
+    location: "London"
+    type: "Chinese"
+  benefits: "This is thing, time two thing"
+-
+  label: "benefits"
+  type: "basic"
+  url: "/travel/cars/search/details"
+  title: "Duck and Rice"
+  image: "scene/42.jpg"
+  meta:
+    stars: 4
+    location: "London"
+    type: "Chinese"
+  benefits: "This is thing, time two thing"
+-
+  label: "benefits"
+  type: "basic"
+  url: "/travel/cars/search/details"
+  title: "Duck and Rice"
+  image: "scene/39.jpg"
+  meta:
+    stars: 4
+    location: "London"
+    type: "Chinese"
+  benefits: "This is thing, time two thing"

@@ -5,7 +5,7 @@
 				%h2= data[config[:client]].content.travelSearchTitle
 				%h4= data[config[:client]].content.travelSearchSubtitle
 			.button.secondary.overlay-launcher
-				Ask a travel & lifestyle manager
+				= data[config[:client]].content.travelSearchRequest
 				.overlay-content
 					%h1 WOOOOOOF
 		%ul#travel-search-buttons

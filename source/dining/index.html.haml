@@ -2,4 +2,5 @@
 title: Dining
 ---
 = partial "shared/search/search_panel", :locals => { :type => "dining", :title => "Search Dining" }
+= partial "shared/cards/card_grid", :locals => { :cards => data.cards.recommend_hot_tables, :title => "Hot tables this week", :type => "zebra" }
 = partial "shared/articles/article_grid", :locals => { :cards => data.articles.dining,  :title => "Recommended dining articles", :total => 6 }

@@ -38,7 +38,12 @@
 			margin-bottom: units(2)
 
 		input
-			@extend %body-1
+			@extend %display-0
+			border:  2px solid white
 			padding: 0 units(1)
 			margin: 0 auto
 			width: 100%
+			outline: none
+			&:focus
+				border: 2px solid palegreen
+				outline: none

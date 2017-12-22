@@ -67,7 +67,13 @@ $units: 8
     flex-wrap: wrap
 
 %card-grid
-  margin-bottom: units(5)
+  padding-bottom: units(5)
+
+  > header
+    h3
+      @extend %display-1
+      padding-top: units(4)
+      margin-bottom: units(3)
   
   > ul
     margin-top: units(4)
@@ -107,7 +113,7 @@ $units: 8
       grid-template-columns: repeat(4, 1fr)
 
 %card-list
-  margin-bottom: units(5)
+  padding-bottom: units(5)
 
   > ul
     margin-top: units(4)

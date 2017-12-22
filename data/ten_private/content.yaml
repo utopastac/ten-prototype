@@ -5,6 +5,7 @@ homeHeroSubtitle: "Eleanor Roosevelt"
 homeHeroImage: "/images/ten-bg.png"
 travelSearchTitle: "Search and book flights, hotels, & cars"
 travelSearchSubtitle: "Select one or many"
+travelSearchRequest: "Ask a travel & lifestyle manager"
 sections:
   - type: "travel"
     title: "Travel"
@@ -29,5 +30,9 @@ cards:
       text: "#FFFFFF"
     article:
       title: "Article"
+      color: "#FFFFFF"
+      text: "#141413"
+    hot_tables:
+      title: "Hot table"
       color: "#FFFFFF"
       text: "#141413"

@@ -1,0 +1,44 @@
+-
+  label: "hot_tables"
+  type: "basic"
+  url: "/travel/cars/search/details"
+  title: "Duck and Rice"
+  image: "scene/23.jpg"
+  meta:
+    stars: 4
+    location: "London"
+    type: "Chinese"
+  benefits: "This is thing, time two thing"
+-
+  label: "hot_tables"
+  type: "basic"
+  url: "/travel/cars/search/details"
+  title: "Duck and Rice"
+  image: "scene/19.jpg"
+  meta:
+    stars: 4
+    location: "London"
+    type: "Chinese"
+  benefits: "This is thing, time two thing"
+-
+  label: "hot_tables"
+  type: "basic"
+  url: "/travel/cars/search/details"
+  title: "Duck and Rice"
+  image: "scene/33.jpg"
+  meta:
+    stars: 4
+    location: "London"
+    type: "Chinese"
+  benefits: "This is thing, time two thing"
+-
+  label: "hot_tables"
+  type: "basic"
+  url: "/travel/cars/search/details"
+  title: "Duck and Rice"
+  image: "scene/35.jpg"
+  meta:
+    stars: 4
+    location: "London"
+    type: "Chinese"
+  benefits: "This is thing, time two thing"

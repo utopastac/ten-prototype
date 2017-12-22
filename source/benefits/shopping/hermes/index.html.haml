@@ -1,0 +1,12 @@
+---
+title: Hermés
+---
+
+- page_data = data.details.benefit
+
+= partial "shared/details/details_single_image", :locals => page_data
+= partial "shared/details/details_header", :locals => page_data
+#details-main
+	%div
+		= partial "shared/details/details_content", :locals => page_data
+		= partial "shared/details/basket_summary_benefit", :locals => page_data
