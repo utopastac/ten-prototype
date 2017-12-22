@@ -1,0 +1,4 @@
+%ul.tabs
+	- tabs.each_with_index do |tab, index|
+		%li{ :class => index == selectedIndex ? "active" : ""  }
+			= tab

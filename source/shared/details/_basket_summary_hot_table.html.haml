@@ -2,9 +2,7 @@
 	%header
 		%h2 Book a hot table
 	.tabs-container
-		%ul.tabs
-			%li.active Book
-			%li Request
+		= partial "shared/ui/tabs", :locals => { :tabs => ["Book", "Request"], :selectedIndex => 0 }
 	.content
 		.payment-option
 			%h5 Sat 30 December 2017
