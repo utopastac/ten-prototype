@@ -3,7 +3,7 @@
   type: "basic"
   url: "/member-events/art/affordable-art-fair"
   title: "Duck and Rice"
-  image: "scene/46.jpg"
+  image: "events/1.jpg"
   meta:
     stars: 4
     location: "London"
@@ -14,7 +14,7 @@
   type: "basic"
   url: "/member-events/art/affordable-art-fair"
   title: "Duck and Rice"
-  image: "scene/41.jpg"
+  image: "events/6.jpg"
   meta:
     stars: 4
     location: "London"
@@ -25,7 +25,7 @@
   type: "basic"
   url: "/member-events/art/affordable-art-fair"
   title: "Duck and Rice"
-  image: "scene/42.jpg"
+  image: "events/5.jpg"
   meta:
     stars: 4
     location: "London"
@@ -36,7 +36,7 @@
   type: "basic"
   url: "/member-events/art/affordable-art-fair"
   title: "Duck and Rice"
-  image: "scene/39.jpg"
+  image: "events/7.jpg"
   meta:
     stars: 4
     location: "London"

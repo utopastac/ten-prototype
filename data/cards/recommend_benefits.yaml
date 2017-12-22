@@ -3,7 +3,7 @@
   type: "basic"
   url: "/benefits/shopping/hermes"
   title: "Duck and Rice"
-  image: "scene/46.jpg"
+  image: "benefits/hermes-2.jpg"
   meta:
     stars: 4
     location: "London"
@@ -14,7 +14,7 @@
   type: "basic"
   url: "/benefits/shopping/hermes"
   title: "Duck and Rice"
-  image: "scene/41.jpg"
+  image: "benefits/3.jpg"
   meta:
     stars: 4
     location: "London"
@@ -25,7 +25,7 @@
   type: "basic"
   url: "/benefits/shopping/hermes"
   title: "Duck and Rice"
-  image: "scene/42.jpg"
+  image: "benefits/4.jpg"
   meta:
     stars: 4
     location: "London"
@@ -36,7 +36,7 @@
   type: "basic"
   url: "/benefits/shopping/hermes"
   title: "Duck and Rice"
-  image: "scene/39.jpg"
+  image: "benefits/5.jpg"
   meta:
     stars: 4
     location: "London"

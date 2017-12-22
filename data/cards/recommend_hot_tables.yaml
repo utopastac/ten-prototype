@@ -3,7 +3,7 @@
   type: "basic"
   url: "/dining/hot-table/sushisamba"
   title: "Duck and Rice"
-  image: "scene/23.jpg"
+  image: "dining/1.jpg"
   meta:
     stars: 4
     location: "London"
@@ -14,7 +14,7 @@
   type: "basic"
   url: "/dining/hot-table/sushisamba"
   title: "Duck and Rice"
-  image: "scene/19.jpg"
+  image: "dining/3.jpg"
   meta:
     stars: 4
     location: "London"
@@ -25,7 +25,7 @@
   type: "basic"
   url: "/dining/hot-table/sushisamba"
   title: "Duck and Rice"
-  image: "scene/33.jpg"
+  image: "dining/4.jpg"
   meta:
     stars: 4
     location: "London"
@@ -36,7 +36,7 @@
   type: "basic"
   url: "/dining/hot-table/sushisamba"
   title: "Duck and Rice"
-  image: "scene/35.jpg"
+  image: "dining/5.jpg"
   meta:
     stars: 4
     location: "London"
