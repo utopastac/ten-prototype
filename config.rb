@@ -25,7 +25,11 @@ activate :breadcrumbs, separator: ' : ', wrapper: :li
 config[:client] = "mastercard"
 #mastercard
 #ten_private
-
+activate:deploy do |deploy|
+  deploy.deploy_method = :git
+  deploy.branch = 'master'
+  deploy.build_before = true
+end
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
@@ -59,10 +63,4 @@ configure :build do
 	activate :minify_javascript
 	activate :relative_assets
 	set :relative_links, true
-end
-
-activate:deploy do |deploy|
-  deploy.method = :git
-  deploy.branch = ’master’
-  deploy.build_before = true
 end
