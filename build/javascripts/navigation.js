@@ -1,0 +1,1 @@
+!function(){function n(){o.slideToggle(240)}function e(){o.slideToggle(300)}const i=$("#main-menu-button"),o=$("#main-menu-overlay"),c=$("#main-menu-overlay .close");i.click(n),c.click(e)}();

@@ -1,0 +1,1 @@
+!function(){function e(e){var o=$(e.currentTarget),l=$(".overlay-content",o).clone();n.html(l),c.show(),a.addClass("fixed")}function o(){c.hide(),a.removeClass("fixed")}const c=$("#overlay"),l=$("#overlay-bg"),n=$("#overlay-content"),a=$("body"),r=$(".overlay-launcher"),t=$("#overlay .close");r.click(e),t.click(o),l.click(o)}();
