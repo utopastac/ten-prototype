@@ -1,0 +1,45 @@
+# | icons | light | dark
+navTheme: "light"
+poweredByTen: true
+homeHeroTitle: "FakeBrand Benefits"
+homeHeroSubtitle: "Welcome to FakeBrand Travel & Lifestyle Services - your home of concierge services."
+homeHeroImage: "/images/bg.jpg"
+footerCopy: "FakeBrand Travel & Lifestyle Services are provided by Ten Lifestyle Management Ltd."
+footerNumbers:
+  - title: "Number"
+    number: "0000-0000-0000-0000"
+  - title: "Second"
+    number: "0000-0000-0000-0000"
+travelSearchTitle: "Search and book flights, hotels, & cars"
+travelSearchSubtitle: "Select one or many"
+travelSearchRequest: "Ask a travel & lifestyle manager"
+sections:
+  - type: "travel"
+    title: "Travel"
+    url: "/travel"
+  - type: "dining"
+    title: "Dining"
+    url: "/dining"
+  - type: "entertainment"
+    title: "Entertainment"
+    url: "/entertainment"
+  - type: "events"
+    title: "Member events"
+    url: "/member-events"
+  - type: "benefits"
+    title: "Benefits"
+    url: "/benefits"
+cards:
+  labels:
+    benefits:
+      title: "FakeBrand Benefits"
+      color: "#141413"
+      text: "#FFFFFF"
+    article:
+      title: "Article"
+      color: "#FFFFFF"
+      text: "#141413"
+    hot_tables:
+      title: "Hot table"
+      color: "#FFFFFF"
+      text: "#141413"

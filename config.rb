@@ -22,14 +22,10 @@ activate :directory_indexes
 activate :sprockets
 activate :breadcrumbs, separator: ' : ', wrapper: :li
 
-config[:client] = "mastercard"
+config[:client] = "fake_brand"
 #mastercard
 #ten_private
-activate:deploy do |deploy|
-  deploy.deploy_method = :git
-  deploy.branch = 'master'
-  deploy.build_before = true
-end
+#fake_brand
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
