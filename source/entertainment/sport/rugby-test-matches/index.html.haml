@@ -1,0 +1,12 @@
+---
+title: Rugby Test Matches
+---
+
+- page_data = data.details.entertainment
+
+= partial "shared/details/details_gallery", :locals => page_data
+= partial "shared/details/details_header", :locals => page_data
+#details-main
+	%div
+		= partial "shared/details/details_content", :locals => page_data
+		= partial "shared/details/basket_summary_entertainment", :locals => page_data

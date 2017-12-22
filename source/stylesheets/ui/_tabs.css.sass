@@ -1,0 +1,21 @@
+ul.tabs
+	display: flex
+
+	li
+		flex: 1
+		height: units(4)
+		border: 1px solid $cta
+		@extend %display-0
+		display: flex
+		align-items: center
+		justify-content: center
+
+		&:not(.active)
+			cursor: pointer
+			&:hover
+				color: white
+				background-color: rgba($cta, 0.9)
+
+		&.active
+			color: white
+			background-color: $cta

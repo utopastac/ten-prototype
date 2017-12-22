@@ -1,42 +1,42 @@
 -
-  label: "hot_tables"
+  label: "benefits"
   type: "basic"
-  url: "/dining/hot-table/sushisamba"
+  url: "/entertainment/sport/rugby-test-matches"
   title: "Duck and Rice"
-  image: "scene/23.jpg"
+  image: "scene/46.jpg"
   meta:
     stars: 4
     location: "London"
     type: "Chinese"
   benefits: "This is thing, time two thing"
 -
-  label: "hot_tables"
+  label: "benefits"
   type: "basic"
-  url: "/dining/hot-table/sushisamba"
+  url: "/entertainment/sport/rugby-test-matches"
   title: "Duck and Rice"
-  image: "scene/19.jpg"
+  image: "scene/41.jpg"
   meta:
     stars: 4
     location: "London"
     type: "Chinese"
   benefits: "This is thing, time two thing"
 -
-  label: "hot_tables"
+  label: "benefits"
   type: "basic"
-  url: "/dining/hot-table/sushisamba"
+  url: "/entertainment/sport/rugby-test-matches"
   title: "Duck and Rice"
-  image: "scene/33.jpg"
+  image: "scene/42.jpg"
   meta:
     stars: 4
     location: "London"
     type: "Chinese"
   benefits: "This is thing, time two thing"
 -
-  label: "hot_tables"
+  label: "benefits"
   type: "basic"
-  url: "/dining/hot-table/sushisamba"
+  url: "/entertainment/sport/rugby-test-matches"
   title: "Duck and Rice"
-  image: "scene/35.jpg"
+  image: "scene/39.jpg"
   meta:
     stars: 4
     location: "London"

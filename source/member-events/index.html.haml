@@ -3,4 +3,5 @@ title: Member events
 ---
 
 = partial "shared/search/search_panel", :locals => { :type => "events", :title => "Search Member events" }
+= partial "shared/cards/card_grid", :locals => { :cards => data.cards.recommend_events, :title => "New events", :type => "highlight" }
 = partial "shared/articles/article_grid", :locals => { :cards => data.articles.member_events,  :title => "Recommended member events articles", :total => 6 }
