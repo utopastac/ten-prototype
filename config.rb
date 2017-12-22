@@ -20,7 +20,7 @@ set :fonts_dir, 'fonts'
 
 activate :directory_indexes
 activate :sprockets
-activate :breadcrumbs, separator: ' / ', wrapper: :li
+activate :breadcrumbs, separator: ' : ', wrapper: :li
 
 config[:client] = "mastercard"
 #mastercard

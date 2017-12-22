@@ -1,0 +1,33 @@
+#tertiary-nav
+	@extend %content-column
+
+	> div
+		padding-top: units(3)
+		padding-bottom: units(3)
+
+		h3
+			@extend %display-2
+			margin-bottom: units(2)
+
+		ul
+			align-items: center
+			display: flex
+
+		li
+			@extend %body-1
+			display: flex
+			border: 1px solid $black
+			padding: units(0.5) units(2)
+
+			&:not(:first-child)
+				border-left: none
+
+			&.active
+				background: $black
+				a
+					color: white
+
+			a
+				flex: 1
+
+			

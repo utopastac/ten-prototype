@@ -1,0 +1,7 @@
+#tertiary-nav
+	%div
+		%h3= title
+		%ul
+			- links.each_with_index do |link, index|
+				%li{ :class => index == selectedIndex ? "active" : ""  }
+					= link_to link, urls[index]
