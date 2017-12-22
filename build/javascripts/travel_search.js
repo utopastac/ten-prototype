@@ -1,0 +1,1 @@
+!function(){function t(t){var c=$(t.currentTarget),l=c.data("target");c.toggleClass("active"),$("#"+l).slideToggle(),c.hasClass("active")?$(".button",c).html("Selected"):$(".button",c).html("Select"),e.hasClass("active")?a.show():a.hide()}const e=$("#travel-search-buttons li"),a=$("#travel-search-container > .button");e.click(t)}();

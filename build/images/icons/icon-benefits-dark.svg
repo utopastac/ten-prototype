@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="23px" viewBox="0 0 24 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon_Benefits</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="headers" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-706.000000, -1576.000000)" stroke-linecap="round">
+        <g id="Group-7" transform="translate(307.000000, 1572.000000)" stroke="#000000" stroke-width="0.75">
+            <g id="Icon_Benefits" transform="translate(399.000000, 4.000000)">
+                <path d="M18.8522,7.6077 C18.0612,8.3337 16.8312,8.2797 16.1062,7.4887 C15.3802,6.6977 15.4342,5.4677 16.2252,4.7427 C17.0162,4.0167 18.2462,4.0707 18.9712,4.8617 C19.6972,5.6527 19.6432,6.8817 18.8522,7.6077 Z" id="Stroke-1"></path>
+                <path d="M22.8776,1.28 L17.5386,6.175" id="Stroke-3"></path>
+                <path d="M22.5134,10.8162 C22.8674,10.4922 23.0654,10.0362 23.0574,9.5702 L23.0034,6.6652 C22.9964,6.2932 22.8584,5.9422 22.6124,5.6742 L18.4774,1.1642 C18.2314,0.8962 17.8934,0.7282 17.5244,0.6892 L14.6344,0.3832 C14.1704,0.3352 13.6994,0.4942 13.3454,0.8172 L0.5304,12.5682 L9.6974,22.5662 L22.5134,10.8162 Z" id="Stroke-5"></path>
+            </g>
+        </g>
+    </g>
+</svg>
