@@ -5,7 +5,7 @@
 	
 	h4
 		@extend %display-1
-		margin-bottom: units(1)	
+		margin-bottom: units(2)	
 
 	&#search-field-flights
 
@@ -15,34 +15,42 @@
 
 .travel-search-bar
 	background-color: white
-	border: $light-border
 
 	@include min($screen-m)
 		display: flex
 
 	.segment
-		flex: 1
 		position: relative
-		padding: units(2)
+		padding: 0
 		&:not(:last-child)
-			border-bottom: $light-border
+			margin-bottom: units(2)
 
 		@include min($screen-m)
-			padding: units(1)
-			border-bottom: none
 			&:not(:last-child)
-				border-bottom: none
-				border-right: $light-border
+				margin-bottom: 0
+				input[type="text"]
+					border-right: none
+
+		&.small
+			flex: 0.5
+
+		&.medium
+			flex: 0.75
+
+		&.large
+			flex: 1
 
 		label
 			@extend %caption
 			text-transform: uppercase
 			@extend %bold
+			margin-bottom: units(1)
 
 		input[type="text"]
-			border: none
+			border: $light-border
+			padding: 0 units(1)
 			@extend %display-0
 			outline: none
 			&:focus
-				border: none
 				outline: none
+				

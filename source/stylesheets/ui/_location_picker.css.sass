@@ -1,0 +1,30 @@
+#location-picker
+	padding: 0
+
+	> div
+		width: units(40)
+		max-width: 100%
+		height: units(40)
+		overflow-y: scroll
+
+		h4
+			margin-bottom: units(1)
+			padding: 0 units(2)
+			@extend %body-2
+
+		ul
+			padding: units(2) 0
+			&.recent
+				background: $grey-lightest
+			&:not(:last-child)
+				border-bottom: $light-border
+			li
+				height: units(5)
+				@extend %display-0
+				display: flex
+				align-items: center
+				cursor: pointer
+				padding: 0 units(2)
+
+				&:hover
+					background: darken($grey-lightest, 10%)

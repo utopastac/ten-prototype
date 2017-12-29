@@ -1,0 +1,47 @@
+$date-width: 4rem
+$row-width: $date-width * 7
+
+.date-picker-element
+	header
+		position: relative
+		height: units(4)
+		text-align: center
+		margin-bottom: units(1)
+		padding-bottom: units(1)
+		border-bottom: $light-border
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+		&:before, &:after
+			content: ""
+			width: units(4)
+			height: units(4)
+			@include size-background($gallery-arrow-icon-left, units(2))
+
+
+		&:after
+			background-image: $gallery-arrow-icon-right
+
+		h4
+			@extend %body-2
+
+	ul
+		display: flex
+		flex-wrap: wrap
+		width: $row-width
+
+		&.week
+			li
+				opacity: 0.5
+				@extend %body-2
+		&.days
+			li
+				@extend %display-0
+
+		li
+			width: $date-width
+			height: $date-width
+			display: flex
+			align-items: center
+			justify-content: center

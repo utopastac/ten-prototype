@@ -2,6 +2,8 @@
 	%div
 		%h4 Hotels
 		.travel-search-bar
-			= partial "shared/travel/search_field_segment", :locals => { :label => "Destination", :id => "destination", :placeholder => "Search by location & hotel name" }
-			= partial "shared/travel/search_field_segment", :locals => { :label => "Dates", :id => "dates", :placeholder => "Check in – check out" }
-			= partial "shared/travel/search_field_segment", :locals => { :label => "Rooms & guests", :id => "rooms-guests", :placeholder => "How many people?" }
+			= partial "shared/travel/search_field_segment", :locals => {:helperElement => "location-picker", :label => "Destination", :id => "destination", :type => "large", :placeholder => "Search by location & hotel name" }
+			= partial "shared/travel/search_field_segment", :locals => {:helperElement => "date-picker", :label => "Check in", :id => "check-in-hotel", :type => "medium", :placeholder => "04/02/2017" }
+			= partial "shared/travel/search_field_segment", :locals => {:helperElement => "date-picker", :label => "Check Out", :id => "check-out-hotel", :type => "medium", :placeholder => "10/02/2017" }
+			= partial "shared/travel/search_field_segment", :locals => {:helperElement => "people-picker", :label => "Guests", :type => "small", :id => "rooms-guests", :placeholder => "1 adult" }
+			= partial "shared/travel/search_field_segment", :locals => {:helperElement => "room-picker", :label => "Rooms", :type => "small", :id => "rooms-guests", :placeholder => "1" }

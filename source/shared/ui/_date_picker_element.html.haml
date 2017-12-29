@@ -1,0 +1,10 @@
+- week = ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"]
+.date-picker-element
+	%header
+		%h4 January
+	%ul.week
+		- week.each do |x|
+			%li= x
+	%ul.days
+		- 31.times do |x|
+			%li= x+1

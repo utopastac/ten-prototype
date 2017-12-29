@@ -2,6 +2,7 @@
 	%div
 		%h4 Cars
 		.travel-search-bar
-			= partial "shared/travel/search_field_segment", :locals => { :label => "Pick up location", :id => "pick-up-location", :placeholder => "Depot" }
-			= partial "shared/travel/search_field_segment", :locals => { :label => "Date & time", :id => "dates-times", :placeholder => "Pick-up – drop off" }
-			= partial "shared/travel/search_field_segment", :locals => { :label => "Drivers age", :id => "drivers-age", :placeholder => "Must be over 21" }
+			= partial "shared/travel/search_field_segment", :locals => {:helperElement => "location-picker", :label => "Pick up location", :id => "pick-up-location", :type => "large", :placeholder => "Depot" }
+			= partial "shared/travel/search_field_segment", :locals => {:helperElement => "date-and-time-picker", :label => "Pick up date/time", :id => "pick-up-date-cars", :type => "medium", :placeholder => "Pick-up" }
+			= partial "shared/travel/search_field_segment", :locals => {:helperElement => "date-and-time-picker", :label => "Drop off date/time", :id => "drop-off-date-cars", :type => "medium", :placeholder => "Drop off" }
+			= partial "shared/travel/search_field_segment", :locals => {:helperElement => "", :label => "Drivers age", :id => "drivers-age", :type => "small", :placeholder => "Must be over 21" }

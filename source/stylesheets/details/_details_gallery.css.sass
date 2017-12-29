@@ -32,7 +32,7 @@ $gallery-remainder: (100-$gallery-slide-width) / 2
 		bottom: units(2)
 		left: 50%
 		transform: translateX(-50%)
-		z-index: 1000
+		z-index: 100
 		display: flex
 		li
 			width: units(1)
@@ -67,7 +67,7 @@ $gallery-remainder: (100-$gallery-slide-width) / 2
 			background-position: center center
 			background-repeat: no-repeat
 			background-size: auto 50%
-			z-index: 100000
+			z-index: 1000
 			@include animate(0.1s)
 
 		&:not(&.active)

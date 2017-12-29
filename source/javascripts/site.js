@@ -7,3 +7,4 @@
 //= require travel_search
 //= require navigation
 //= require overlay
+//= require search-field-helper

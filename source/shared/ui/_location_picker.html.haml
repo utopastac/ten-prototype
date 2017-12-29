@@ -1,0 +1,10 @@
+#location-picker.picker
+	%div
+		%ul.recent
+			%h4 Recent searches
+			%li London
+			%li London Gatwick
+		%ul.suggested
+			%h4 Suggested searches
+			- data.travel.airports.each do |location|
+				%li= location

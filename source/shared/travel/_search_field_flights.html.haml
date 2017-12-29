@@ -2,7 +2,8 @@
 	%div
 		%h4 Flights
 		.travel-search-bar
-			= partial "shared/travel/search_field_segment", :locals => { :label => "Fly from", :id => "departure", :placeholder => "Departure" }
-			= partial "shared/travel/search_field_segment", :locals => { :label => "Fly to", :id => "arrival", :placeholder => "Destination" }
-			= partial "shared/travel/search_field_segment", :locals => { :label => "Dates", :id => "dates", :placeholder => "Outbound – inbound" }
-			= partial "shared/travel/search_field_segment", :locals => { :label => "Passengers", :id => "passengers", :placeholder => "1 adult" }
+			= partial "shared/travel/search_field_segment", :locals => {:helperElement => "location-picker", :label => "Fly from", :id => "departure", :type => "large", :placeholder => "Departure" }
+			= partial "shared/travel/search_field_segment", :locals => {:helperElement => "location-picker", :label => "Fly to", :id => "arrival", :type => "large", :placeholder => "Destination" }
+			= partial "shared/travel/search_field_segment", :locals => {:helperElement => "date-picker", :label => "Depart", :id => "date-depart-flight", :type => "medium", :placeholder => "04/02/2017" }
+			= partial "shared/travel/search_field_segment", :locals => {:helperElement => "date-picker", :label => "Return", :id => "date-return-flight", :type => "medium", :placeholder => "10/02/2017" }
+			= partial "shared/travel/search_field_segment", :locals => {:helperElement => "people-picker", :label => "Passengers", :id => "passengers", :type => "medium", :placeholder => "1 adult" }

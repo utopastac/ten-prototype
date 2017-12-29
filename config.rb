@@ -22,7 +22,7 @@ activate :directory_indexes
 activate :sprockets
 activate :breadcrumbs, separator: ' : ', wrapper: :li
 
-config[:client] = "fake_brand"
+config[:client] = "mastercard"
 #mastercard
 #ten_private
 #fake_brand

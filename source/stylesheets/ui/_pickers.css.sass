@@ -1,0 +1,64 @@
+#pickers
+	z-index: $z-pickers
+
+.picker
+	position: absolute
+	top: 0
+	left: 0
+	display: none
+	background: white
+	border: $light-border
+	padding: units(2)
+
+ul.increment
+	li
+		&:not(:last-child)
+			margin-bottom: units(2)
+			padding-bottom: units(2)
+			border-bottom: $light-border
+
+		.title
+			display: flex
+			margin-bottom: units(1)
+			@extend %body-1
+
+			h4
+				@extend %medium
+				margin-right: units(1)
+
+			p
+				opacity: 0.5
+
+		.controls
+			display: flex
+			justify-content: space-between
+			align-items: center
+
+			.plus, .minus, .number
+				width: units(5)
+				height: units(5)
+				border: $light-border
+				cursor: pointer
+
+			.plus, .minus
+				border-color: $cta
+				border-radius: 500px
+				@include size-background($icon-plus-dark, units(2))
+
+				&:hover
+					background-color: $cta
+
+			.plus
+				&:hover
+					background-image: $icon-plus-light
+
+			.minus
+				background-image: $icon-minus-dark
+				&:hover
+					background-image: $icon-minus-light
+
+			.number
+				@extend %display-0
+				display: flex
+				align-items: center
+				justify-content: center

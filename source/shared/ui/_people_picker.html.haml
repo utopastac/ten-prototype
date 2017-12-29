@@ -1,0 +1,11 @@
+#people-picker.picker
+	%ul.increment
+		- data.travel.people.each do |person|
+			%li
+				.title
+					%h4= person.name
+					%p= person.sub
+				.controls
+					.minus
+					.number 1
+					.plus
