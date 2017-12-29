@@ -43,3 +43,18 @@ cards:
       title: "Hot table"
       color: "#FFFFFF"
       text: "#141413"
+profile:
+  name: "Andrew Longfield"
+  email: "a.longfield@example.com"
+  phone: "02000000000"
+  address:
+      firstline: "Parkhouse"
+      secondline: "2000 Long street"
+      city: "New York"
+      code: "NY22 1022"
+  card:
+    type: "Mastercard"
+    number: "**** **** **** 2222"
+  frequentFlyer:
+    type: "British Airways"
+    number: "22002200"

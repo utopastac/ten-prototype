@@ -1,0 +1,59 @@
+.edit
+	position: absolute
+	bottom: 0
+	left: 0
+	padding-left: units(2)
+	@extend %caption
+	background: $icon-edit-dark no-repeat
+	cursor: pointer
+
+.profile-card
+	padding: units(2)
+	border: $light-border
+	min-height: units(25)
+	background: white
+	display: flex
+
+	> div
+		position: relative
+
+		p
+			margin-top: units(1)
+			@extend %display-0
+
+
+.add-card, .blank-card
+	background-color: transparent
+	padding: units(3)
+	align-items: center
+	justify-content: center
+
+	h3
+		@extend %display-0
+		text-align: center
+
+.blank-card
+	h3
+		opacity: 0.7
+
+.add-card
+	cursor: pointer
+	@include animate(0.2s)
+
+	&:hover
+		background: white
+
+		h3:before
+			background-color: $cta
+			background-image: $icon-plus-light
+
+	h3
+		&:before
+			content: ""
+			display: block
+			width: units(5)
+			height: units(5)
+			border: 1px solid $cta
+			border-radius: 500px
+			margin: 0 auto units(1) auto
+			@include size-background($icon-plus-dark, units(3))
