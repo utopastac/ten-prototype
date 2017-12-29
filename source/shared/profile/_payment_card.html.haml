@@ -1,1 +1,9 @@
-= partial "shared/profile/profile_card", :locals => {:tag => "Primary", :content => "Woof"}
+.profile-card
+	%div
+		.tag Primary
+		.credit-card
+			%div
+				= image_tag card.logo
+				%p= card.type
+		%p= card.number
+		.edit edit

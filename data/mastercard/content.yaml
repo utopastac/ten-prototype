@@ -45,16 +45,24 @@ cards:
       text: "#141413"
 profile:
   name: "Andrew Longfield"
+  flag: "flags/american.png"
+  nationality: "American"
+  passport: "BA2002002002"
   email: "a.longfield@example.com"
-  phone: "02000000000"
-  address:
-      firstline: "Parkhouse"
-      secondline: "2000 Long street"
-      city: "New York"
-      code: "NY22 1022"
+  phone: "+44 02000000000"
+  address: |
+      Parkhouse  
+      2000 Long street  
+      New York  
+      NY22 1022
   card:
     type: "Mastercard"
+    logo: "cards/mastercard.png"
     number: "**** **** **** 2222"
   frequentFlyer:
     type: "British Airways"
+    logo: "logos/ba.png"
     number: "22002200"
+  occasion: |
+      Mum's birthday  
+      14 January

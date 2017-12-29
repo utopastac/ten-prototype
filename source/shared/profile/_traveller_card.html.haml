@@ -1,1 +1,20 @@
-= partial "shared/profile/profile_card", :locals => {:tag => "Main", :content => "Woof"}
+.profile-card.traveller
+	%div
+		%h4= name
+		%ul
+			%li
+				%p Nationality
+				%div
+					= image_tag flag
+					%p= nationality
+			%li
+				%p Passport
+				%div
+					%p= passport
+		.frequent-flyer
+			%h5 Frequent flyer numbers
+			%div
+				= image_tag frequentFlyer.logo
+				%p= frequentFlyer.number
+
+		.edit edit
