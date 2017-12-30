@@ -1,0 +1,14 @@
+.add-details-form
+	%header
+		%h2 Add authorised user
+	.form
+		.fields
+			%label Type
+			%select
+				%option{:value=>"mobile"} Partner
+				%option{:value=>"mobile"} Colleague
+				%option{:value=>"mobile"} Employee
+			= partial "shared/ui/text_input", :locals => { :id => "first-name", :label => "First name", :placeholder => "Add a name"}
+			= partial "shared/ui/text_input", :locals => { :id => "last-name", :label => "Last name", :placeholder => "Add a name"}
+			= partial "shared/ui/text_input", :locals => { :id => "password", :label => "Password", :placeholder => "Choose a password"}
+			.button Save & close

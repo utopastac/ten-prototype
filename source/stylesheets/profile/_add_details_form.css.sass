@@ -1,0 +1,33 @@
+.add-details-form
+	display: flex
+
+	header
+		flex: 0.5
+
+		h2
+			@extend %display-3
+
+	.form
+		flex: 1
+		border-left: $light-border
+		padding-left: units(4)
+
+	.fields
+		max-width: units(42)
+
+	.field-block
+		background: $grey-lightest
+		padding: units(3)
+		input[type="text"]
+			margin-bottom: 0
+
+	.field-outline
+		border: $light-border
+		padding: units(3)
+		margin-bottom: units(3)
+
+	.button
+		display: inline-block
+
+	input[type="text"], select, input[type="checkbox"] + label
+		margin-bottom: units(3)

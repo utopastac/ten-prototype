@@ -1,0 +1,10 @@
+.phone-input
+	%label Phone number
+	%div
+		%select
+			- data.travel.nationalities.each do |nationality|
+				%option{:value=>nationality}
+					= nationality
+		.phone-input-fields
+			%input{:type => "text", :name => "country-code", :id => "country-code", :placeholder => "01"}
+			%input{:type => "text", :name => "phone-number", :id => "phone-number", :placeholder => "Enter a phone number"}

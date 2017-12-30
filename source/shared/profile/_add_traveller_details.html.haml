@@ -1,0 +1,21 @@
+.add-details-form
+	%header
+		%h2 Add traveller profile
+	.form
+		.fields
+			= partial "shared/ui/text_input", :locals => { :id => "title", :label => "Title", :placeholder => "Add a title"}
+			= partial "shared/ui/text_input", :locals => { :id => "first-name", :label => "First name", :placeholder => "Add a first name"}
+			= partial "shared/ui/text_input", :locals => { :id => "last-name", :label => "Last name", :placeholder => "Add a last name"}
+			= partial "shared/ui/nationality_input", :locals => { :label => "Nationality" }
+			= partial "shared/ui/text_input", :locals => { :id => "passport-number", :label => "Passport Number", :placeholder => "Add a passport number"}
+			%label Frequent flyer numbers
+			.field-block
+				%label Airline
+				%select
+					- data.travel.airlines.each do |airline|
+						%option{:value=>airline}
+							= airline
+				= partial "shared/ui/text_input", :locals => { :id => "ff-number", :label => "Frequent flyer number", :placeholder => "Add a number"}
+
+			= partial "shared/ui/checkbox", :locals => { :id => "preferred", :label => "Make this my preferred traveller profile"}
+			.button Save & close

@@ -1,13 +1,18 @@
 label
   display: block
+  @extend %display-0
+  margin-bottom: units(1)
 
 input[type="text"], input[type="email"], textarea
   display: block
   width: 100%
+  @extend %display-0
 
 input[type="text"]
-  height: 5rem
+  height: units(5)
   border: $form-border
+  padding: 0 units(1)
+  font-family: $font-regular
 
 textarea
   height: 14rem
@@ -20,14 +25,58 @@ input[type="radio"]
   display: inline
   width: auto
 
+input[type="checkbox"]
+  visibility: hidden
+
+  & + label
+    display: flex
+    align-items: center
+    @extend %body-1
+
+    &:before
+      content: ""
+      width: units(2)
+      height: units(2)
+      display: block
+      border: $light-border
+      margin-right: units(1)
+
+  &:checked + label
+
 form
   width: 100%
 
 select
-  background: none
+  background: white
+  display: block
+  width: 100%
+  position: relative
   border: $light-border
   height: units(5)
   -webkit-appearance: none
   @extend %display-0
   border-radius: 0
   padding: 0 units(2)
+  background-image: $icon-arrow-down
+  background-repeat: no-repeat
+  background-size: auto units(1)
+  background-position: right units(1) center
+
+.phone-input
+  > div
+
+    .phone-input-fields
+      display: flex
+
+      #country-code
+        background: $grey-lightest
+        border: $light-border
+        width: units(5)
+
+      #phone-number
+        border: $light-border
+        border-left: none
+        flex: 1
+
+    select
+      margin-bottom: units(2)

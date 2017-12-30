@@ -1,0 +1,5 @@
+%label= label
+%select
+	- data.travel.nationalities.each do |nationality|
+		%option{:value=>nationality}
+			= nationality

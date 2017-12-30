@@ -39,13 +39,17 @@
 	&.traveller
 		h4
 			@extend %display-1
-			margin-bottom: units(1)
+			margin-bottom: units(2)
 
 		ul
 			margin: 0
 			li
 				display: flex
-				justify-content: space-between
+				margin-bottom: units(1)
+
+				> *
+					&:first-child
+						flex: 0.7
 
 				> div
 
@@ -59,11 +63,7 @@
 						width: units(3)
 						margin-right: units(1)
 
-				> *
-					flex: 1
-
 		.frequent-flyer
-			border-top: $light-border
 			border-bottom: $light-border
 			margin-top: units(1)
 			padding: units(1) 0

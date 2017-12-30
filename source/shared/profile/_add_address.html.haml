@@ -1,0 +1,19 @@
+.add-details-form
+	%header
+		%h2 Add address
+	.form
+		.fields
+			%label Type
+			%select
+				%option{:value=>"mobile"} Home
+				%option{:value=>"mobile"} Work
+				%option{:value=>"mobile"} Holiday
+			= partial "shared/ui/text_input", :locals => { :id => "line-1", :label => "Address line 1", :placeholder => ""}
+			= partial "shared/ui/text_input", :locals => { :id => "line-2", :label => "Address line 2", :placeholder => ""}
+			= partial "shared/ui/text_input", :locals => { :id => "line-3", :label => "Address line 3", :placeholder => ""}
+			= partial "shared/ui/text_input", :locals => { :id => "city", :label => "City", :placeholder => ""}
+			= partial "shared/ui/text_input", :locals => { :id => "state-or-province", :label => "State or province", :placeholder => ""}
+			= partial "shared/ui/nationality_input", :locals => { :label => "Country" }
+			= partial "shared/ui/text_input", :locals => { :id => "postcode", :label => "Postcode", :placeholder => ""}
+			= partial "shared/ui/checkbox", :locals => { :id => "preferred", :label => "Make this my preferred address"}
+			.button Save & close

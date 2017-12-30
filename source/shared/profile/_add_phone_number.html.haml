@@ -1,0 +1,13 @@
+.add-details-form
+	%header
+		%h2 Add phone number
+	.form
+		.fields
+			%label Type
+			%select
+				%option{:value=>"mobile"} Mobile
+				%option{:value=>"mobile"} Home
+				%option{:value=>"mobile"} Work
+			= partial "shared/ui/phone_input", :locals => { :id => "title", :label => "Title", :placeholder => "Add a phone number"}
+			= partial "shared/ui/checkbox", :locals => { :id => "preferred", :label => "Make this my preferred phone number"}
+			.button Save & close

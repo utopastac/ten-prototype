@@ -1,0 +1,15 @@
+.add-details-form
+	%header
+		%h2 Add special occasion
+	.form
+		.fields
+			%label Type
+			%select
+				%option{:value=>"mobile"} Birthday
+				%option{:value=>"mobile"} Anniversary
+				%option{:value=>"mobile"} Other
+			= partial "shared/ui/text_input", :locals => { :id => "occassion-name", :label => "Occasion name", :placeholder => "Add a name"}
+			%label Date
+			.field-outline
+				= partial "shared/ui/date_picker_element"
+			.button Save & close

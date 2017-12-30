@@ -30,19 +30,19 @@ title: Details
 		%header
 			%h2 Travellers
 		%ul
-			= partial "shared/profile/add_card", :locals => { :title => "Add a traveller" }
+			= partial "shared/profile/add_card", :locals => { :title => "Add a traveller", :overlay => "shared/profile/add_traveller_details" }
 			= partial "shared/profile/traveller_card", :locals => content
 	%div
 		%header
 			%h2 Phone numbers
 		%ul
-			= partial "shared/profile/add_card", :locals => { :title => "Add a phone number" }
+			= partial "shared/profile/add_card", :locals => { :title => "Add a phone number", :overlay => "shared/profile/add_phone_number" }
 			= partial "shared/profile/phone_number_card", :locals => content
 	%div
 		%header
 			%h2 Addresses
 		%ul
-			= partial "shared/profile/add_card", :locals => { :title => "Add an address" }
+			= partial "shared/profile/add_card", :locals => { :title => "Add an address", :overlay => "shared/profile/add_address" }
 			= partial "shared/profile/address_card", :locals => content
 	%div
 		%header
@@ -52,12 +52,12 @@ title: Details
 			= partial "shared/profile/payment_card", :locals => content
 	%div
 		%header
-			%h2 Special occassions
+			%h2 Special occasions
 		%ul
-			= partial "shared/profile/add_card", :locals => { :title => "Add a special occassion" }
+			= partial "shared/profile/add_card", :locals => { :title => "Add a special occasion", :overlay => "shared/profile/add_special_occassion" }
 			= partial "shared/profile/special_occassion_card", :locals => content
 	%div
 		%header
 			%h2 Authorised users
 		%ul
-			= partial "shared/profile/add_card", :locals => { :title => "Add an authorised user" }
+			= partial "shared/profile/add_card", :locals => { :title => "Add an authorised user", :overlay => "shared/profile/add_authorised_user" }
