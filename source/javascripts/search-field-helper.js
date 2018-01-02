@@ -1,7 +1,7 @@
 (function() {
 	const searchFields = $(".search-field, .travel-search-field .segment");
 	const pickers = $(".picker");
-	searchFields.click(showHelper);
+	searchFields.on("click", showHelper);
 	var helperElement = null;
 
 	function showHelper(event){
@@ -22,7 +22,7 @@
 			case "":
 				break;
 		}
-		helperElement.click(hideHelper);
+		helperElement.on("click", hideHelper);
 	}
 
 	function hideHelper(event){

@@ -40,3 +40,6 @@ Add a css file for your new client. These are added in `source/stylesheets/clien
 ## Adding client overrides
 You can add any variable to `source/stylesheets/_variables.css.sass` with `!default` at the end of the line. This can then be optionally overriden in the individual client stylesheets in the folder `source/stylesheets/client/`.
 To add something more complicated, such as a text variable or a boolean value, add a key/value pair (or array, list, or any object type) to the `content.yaml` files within `data/[name_of_client]`. You can then access these values within the source `[].html.haml` files by using the tag `data[config[:client]].content.[name_of_key]`.
+
+## Adding new routes
+Simply make a folder in `source` with the name of the page you want, and add an `index.html.haml` into the folder. For nested pages, add nested folders with the desired page name, each with their own `index.html.haml`. The yaml attribute `title:` is the label that gets used in the breadcrumb bar.

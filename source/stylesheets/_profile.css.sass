@@ -1,3 +1,21 @@
 @import "profile/_details.css.sass"
 @import "profile/_profile_cards.css.sass"
 @import "profile/_add_details_form.css.sass"
+
+#profile-page
+
+	h2
+		@extend %display-3
+		margin-bottom: units(0)
+
+	.header-panel
+		@extend %content-column
+		margin-bottom: units(5) !important
+		margin-top: units(3) !important
+
+	.main-panel
+		@extend %content-column
+		padding: units(5) 0
+		background: $grey-lightest
+
+		> div

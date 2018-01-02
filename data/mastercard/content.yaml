@@ -3,7 +3,7 @@ navTheme: "light"
 poweredByTen: true
 homeHeroTitle: "Mastercard Benefits"
 homeHeroSubtitle: "Welcome to Mastercard® Travel & Lifestyle Services - where peace of mind and value are guaranteed."
-homeHeroImage: "/images/bg.jpg"
+homeHeroImage: "/images/hero/mastercard-bg.jpg"
 footerCopy: "Mastercard® Travel & Lifestyle Services are provided by Ten Lifestyle Management Ltd. No travel bookings are being made by Mastercard, nor is Mastercard acting as a travel agency or providing any travel consultation or advice, in connection with Mastercard Travel & Lifestyle Services.Mastercard is a registered trademark, and the circles design is a trademark, of Mastercard  International Incorporated, used under license."
 footerNumbers:
   - title: "Number"
@@ -66,3 +66,17 @@ profile:
   occasion: |
       Mum's birthday  
       14 January
+activities:
+  upcoming:
+    -
+      date: "10.10.02"
+      label: "flight"
+      url: "/inspiration/travel/article"
+      title: "London Heathrow (LHR) - Barcelona (BCN)"
+      meta: "meta"
+  past:
+    -
+      label: "flight"
+      url: "/inspiration/travel/article"
+      title: "London Heathrow (LHR) - Barcelona (BCN)"
+      meta: "meta"

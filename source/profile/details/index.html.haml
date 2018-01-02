@@ -4,60 +4,63 @@ title: Details
 
 - content = data[config[:client]].content.profile
 
-= partial "shared/profile/nav", :locals => {:selectedIndex => 0}
+#profile-page
 
-%section#details-overview
-	%div
-		%div
-			%h4 Name
-			%p= content.name
-			.edit edit
-		%div
-			%h4 Email
-			%p= content.email
-			.edit edit
-		%div
-			%h4 Password
-			%p Last changed 2 months ago
-			.edit edit
-		%div
-			%h4 Lifestyle manager preferences
-			%p Preferred contact method
-			= partial "shared/ui/tabs", :locals => { :tabs => ["Email", "Phone"], :selectedIndex => 0 }
+	= partial "shared/profile/nav", :locals => {:selectedIndex => 0}
 
-%section#details-cards
 	%div
-		%header
-			%h2 Travellers
-		%ul
-			= partial "shared/profile/add_card", :locals => { :title => "Add a traveller", :overlay => "shared/profile/add_traveller_details" }
-			= partial "shared/profile/traveller_card", :locals => content
-	%div
-		%header
-			%h2 Phone numbers
-		%ul
-			= partial "shared/profile/add_card", :locals => { :title => "Add a phone number", :overlay => "shared/profile/add_phone_number" }
-			= partial "shared/profile/phone_number_card", :locals => content
-	%div
-		%header
-			%h2 Addresses
-		%ul
-			= partial "shared/profile/add_card", :locals => { :title => "Add an address", :overlay => "shared/profile/add_address" }
-			= partial "shared/profile/address_card", :locals => content
-	%div
-		%header
-			%h2 Payment cards
-		%ul
-			= partial "shared/profile/blank_card", :locals => { :title => "Cards you use to make a payment can be saved here for future use" }
-			= partial "shared/profile/payment_card", :locals => content
-	%div
-		%header
-			%h2 Special occasions
-		%ul
-			= partial "shared/profile/add_card", :locals => { :title => "Add a special occasion", :overlay => "shared/profile/add_special_occassion" }
-			= partial "shared/profile/special_occassion_card", :locals => content
-	%div
-		%header
-			%h2 Authorised users
-		%ul
-			= partial "shared/profile/add_card", :locals => { :title => "Add an authorised user", :overlay => "shared/profile/add_authorised_user" }
+		%section#details-overview.header-panel
+			%div
+				%div
+					%h4 Name
+					%p= content.name
+					.edit edit
+				%div
+					%h4 Email
+					%p= content.email
+					.edit edit
+				%div
+					%h4 Password
+					%p Last changed 2 months ago
+					.edit edit
+				%div
+					%h4 Lifestyle manager preferences
+					%p Preferred contact method
+					= partial "shared/ui/tabs", :locals => { :tabs => ["Email", "Phone"], :selectedIndex => 0 }
+
+		%section#details-cards.main-panel
+			%div
+				%header
+					%h2 Travellers
+				%ul
+					= partial "shared/profile/add_card", :locals => { :title => "Add a traveller", :overlay => "shared/profile/add_traveller_details" }
+					= partial "shared/profile/traveller_card", :locals => content
+			%div
+				%header
+					%h2 Phone numbers
+				%ul
+					= partial "shared/profile/add_card", :locals => { :title => "Add a phone number", :overlay => "shared/profile/add_phone_number" }
+					= partial "shared/profile/phone_number_card", :locals => content
+			%div
+				%header
+					%h2 Addresses
+				%ul
+					= partial "shared/profile/add_card", :locals => { :title => "Add an address", :overlay => "shared/profile/add_address" }
+					= partial "shared/profile/address_card", :locals => content
+			%div
+				%header
+					%h2 Payment cards
+				%ul
+					= partial "shared/profile/blank_card", :locals => { :title => "Cards you use to make a payment can be saved here for future use" }
+					= partial "shared/profile/payment_card", :locals => content
+			%div
+				%header
+					%h2 Special occasions
+				%ul
+					= partial "shared/profile/add_card", :locals => { :title => "Add a special occasion", :overlay => "shared/profile/add_special_occassion" }
+					= partial "shared/profile/special_occassion_card", :locals => content
+			%div
+				%header
+					%h2 Authorised users
+				%ul
+					= partial "shared/profile/add_card", :locals => { :title => "Add an authorised user", :overlay => "shared/profile/add_authorised_user" }

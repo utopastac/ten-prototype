@@ -2,9 +2,35 @@
 title: Notifications
 ---
 
-= partial "shared/profile/nav", :locals => {:selectedIndex => 1}
+- content = data[config[:client]].content.activities
 
-%section#details-cards
+#profile-page
+
+	= partial "shared/profile/nav", :locals => {:selectedIndex => 1}
+
 	%div
-		%header
-			%h2 Your upcoming activites
+		%section#upcoming-activities.header-panel
+			%header
+				%h2 Upcoming activites
+
+			%ul
+				- content.upcoming.each do |activity|
+					%li
+						%h5= activity.date
+						%p= activity.label
+						%h3= activity.title
+						%p.meta= activity.meta
+
+
+		%section#previous-activities.main-panel
+			%div
+				%header
+					%h2 Previous activites
+
+				%ul
+					- content.past.each do |activity|
+						%li
+							%h5= activity.date
+							%p= activity.label
+							%h3= activity.title
+							%p.meta= activity.meta

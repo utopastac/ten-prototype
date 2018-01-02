@@ -1,0 +1,15 @@
+%html{:lang => "en"}
+  %head
+    %title= current_page.data.title || "Ten Product"
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1, height=device-height,  maximum-scale=1.0, target-densityDpi=device-dpi"}
+    %meta{:name => "apple-mobile-web-app-capable", :content => "yes"}
+    = stylesheet_link_tag "https://fonts.googleapis.com/css?family=Open+Sans"
+    = stylesheet_link_tag "client/#{config[:client]}"
+    = stylesheet_link_tag "library"
+    
+
+  %body#library
+    = yield
+
+    = javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"
+    = javascript_include_tag "site"
