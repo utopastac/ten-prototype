@@ -18,15 +18,22 @@
 
 #overlay-content-container
 	position: absolute
-	top: units(5)
-	left: units(5)
-	right: units(5)
-	bottom: units(5)
-	padding: units(6)
+	top: units(2)
+	left: units(2)
+	right: units(2)
+	bottom: units(2)
+	padding: units(3)
 	max-width: 1200px
 	margin: 0 auto
 	background: white
 	overflow-y: scroll
+
+	@include min($screen-m)
+		top: units(5)
+		left: units(5)
+		right: units(5)
+		bottom: units(5)
+		padding: units(6)
 
 	.close
 		@include close-button($icon-close-dark, units(4), units(4))

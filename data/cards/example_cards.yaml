@@ -1,0 +1,28 @@
+-
+  label: "benefits"
+  type: "basic"
+  url: "/travel/cars/search/details"
+  title: "Duck and Rice"
+  image: "scene/4.jpg"
+  meta:
+    stars: 4
+    location: "London"
+    type: "Chinese"
+  benefits: "This is thing, time two thing"
+-
+  label: "benefits"
+  type: "full"
+  url: "/travel/cars/search/details"
+  title: "Currys PC World"
+  image: "scene/3.jpg"
+  category: "Technology & gadgets"
+  benefits: "2 benefits available"
+-
+  label: "article"
+  type: "article"
+  url: "/inspiration/travel/article"
+  title: "How to spend the perfect summer's day in Venice"
+  image: "scene/29.jpg"
+  price:
+    status: "12/04/2017"
+    value: "travel"

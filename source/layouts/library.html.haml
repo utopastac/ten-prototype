@@ -9,7 +9,10 @@
     
 
   %body#library
-    = yield
+    %div
+      = partial "shared/library/library_nav"
+      %div
+        = yield
 
     = javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"
     = javascript_include_tag "site"

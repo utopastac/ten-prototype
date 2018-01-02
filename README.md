@@ -31,6 +31,9 @@ Run the command:
 `surge`
 Choose a URL. That's it!
 
+## Library
+The url `/library` contains a list of all the component elements including their usage.
+
 ## Different clients
 In the file `config.rb` there in an attribute called `config[:client]`. Add new clients to this list. To add a new client, you must:
 In the root `data` folder add a folder with the name of the client (the same string you use in the `config` file). Add a file in this new folder called `content.yaml`. Copy the content for this file from one of the other clients.

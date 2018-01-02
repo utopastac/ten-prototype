@@ -1,0 +1,17 @@
+.add-details-form
+	%header
+		%h2= data[config[:client]].content.travelSearchRequest
+	.form
+		.fields
+			%label Type
+			%select
+				%option{:value=>"mobile"} Partner
+				%option{:value=>"mobile"} Colleague
+				%option{:value=>"mobile"} Employee
+			%label From date
+			.field-outline
+				= partial "shared/ui/date_picker_element"
+			%label To date
+			.field-outline
+				= partial "shared/ui/date_picker_element"
+			.button Save & close
