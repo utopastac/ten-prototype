@@ -1,11 +1,15 @@
 #location-picker
 	padding: 0
 
+	@include min($screen-m)
+		> div
+			width: units(40)
+
 	> div
-		width: units(40)
 		max-width: 100%
 		height: units(40)
 		overflow-y: scroll
+		-webkit-overflow-scrolling: touch
 
 		h4
 			margin-bottom: units(1)
