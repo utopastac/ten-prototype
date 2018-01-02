@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="15px" viewBox="0 0 11 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="MC--007_Profile--Details--Lrg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-282.000000, -359.000000)" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Edit-Copy" transform="translate(283.000000, 360.000000)" stroke="#002448" stroke-width="0.75">
+            <g id="Icon">
+                <polyline id="Stroke-1" points="3.59923077 13.6319647 0.288461538 10.0883176 3.59923077 6.54384706"></polyline>
+                <path d="M0.288692308,0.308741176 L4.85561538,0.308741176 C7.37869231,0.308741176 9.42330769,2.49768235 9.42330769,5.19803529 C9.42330769,7.89838824 7.37869231,10.0881529 4.85561538,10.0881529 L0.288692308,10.0881529" id="Stroke-3"></path>
+            </g>
+        </g>
+    </g>
+</svg>
