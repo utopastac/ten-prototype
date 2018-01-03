@@ -1,8 +1,9 @@
 # | icons | light | dark
-navTheme: "light"
-homeHeroTitle: "Great minds discuss ideas; average minds discuss events; small minds discuss people."
-homeHeroSubtitle: "Eleanor Roosevelt"
-homeHeroImage: "/images/ten-bg.png"
+navTheme: "dark"
+poweredByTen: true
+homeHeroTitle: "Hello Peter"
+homeHeroSubtitle: "Welcome to CNB Travel & Lifestyle Services"
+homeHeroImage: "/images/hero/cnb-bg.jpg"
 travelSearchTitle: "Search and book flights, hotels, & cars"
 travelSearchSubtitle: "Select one or many"
 travelSearchRequest: "Ask a travel & lifestyle manager"
@@ -26,7 +27,7 @@ cards:
   labels:
     benefits:
       title: "Ten Special Benefits"
-      color: "#672682"
+      color: "#00395D"
       text: "#FFFFFF"
     article:
       title: "Article"

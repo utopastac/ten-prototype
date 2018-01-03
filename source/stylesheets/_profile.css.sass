@@ -7,19 +7,13 @@
 
 #profile-page
 
-	h2
-		@extend %display-3
-		margin-bottom: units(0)
-
 	.header-panel
 		@extend %content-column
 		margin-bottom: units(5) !important
 		margin-top: units(3) !important
 
 		> div
-
-			> header
-				margin-bottom: units(3)
+			@extend %sub-header			
 
 	.main-panel
 		@extend %content-column
@@ -27,5 +21,4 @@
 		background: $grey-lightest
 
 		> div
-			> header
-				margin-bottom: units(3)
+			@extend %sub-header

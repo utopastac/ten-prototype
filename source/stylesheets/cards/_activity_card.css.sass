@@ -1,2 +1,16 @@
 .activity-card
 	h5
+		@extend %display-1
+		margin-bottom: units(1)
+
+	> div
+		border: $light-border
+		padding: units(2)
+		display: inline-block
+
+		h3
+			@extend %display-0
+
+		p
+			&.meta
+				@extend %body-1

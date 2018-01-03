@@ -37,14 +37,32 @@ $screen-xxl: 1400px
 @function size($size)
   @return #{($size / 10)}rem
 
+@function -size($size)
+  @return -#{($size / 10)}rem
+
 // fixed spacing variables - subject to change LOL
 $units: 8
 
 @function units($num)
   @return #{($num * $units) / 10}rem
 
+@function -units($num)
+  @return -#{($num * $units) / 10}rem
+
 %block-link
   display: block
+
+%sub-header
+  > header
+    margin-bottom: units(3)
+
+    h2
+      @extend %display-3
+      margin-bottom: units(0)
+
+      + p
+        margin-top: units(1)
+        @extend %display-0
 
 %content-column
   padding: 0 units(2)
@@ -55,8 +73,8 @@ $units: 8
     position: relative
   > .full-width
     padding: 0
-    margin-left: -1.6rem
-    margin-right: -1.6rem
+    margin-left: -units(2)
+    margin-right: -units(2)
     width: calc(100% + 3.2rem) !important
     
 %content-column-flex

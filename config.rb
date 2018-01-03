@@ -20,12 +20,13 @@ set :fonts_dir, 'fonts'
 
 activate :directory_indexes
 activate :sprockets
-activate :breadcrumbs, separator: ' : ', wrapper: :li
+activate :breadcrumbs, separator: '  ', wrapper: :li
 
-config[:client] = "mastercard"
+config[:client] = "cnb"
 #mastercard
 #ten_private
 #fake_brand
+#cnb
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'

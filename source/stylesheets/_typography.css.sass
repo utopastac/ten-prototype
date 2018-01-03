@@ -2,23 +2,23 @@ $baseSize: 16
 
 %light
   font-family: $font-light
-  font-weight: normal
+  font-weight: $font-light-weight
 
 %regular
   font-family: $font-regular
-  font-weight: normal
+  font-weight: $font-regular-weight
 
 %book
   font-family: $font-book
-  font-weight: normal
+  font-weight: $font-book-weight
 
 %medium
   font-family: $font-medium
-  font-weight: normal
+  font-weight: $font-medium-weight
 
 %bold
   font-family: $font-medium
-  font-weight: normal
+  font-weight: $font-bold-weight
 
 h1, h2, h3, h4, h5, h6, li, ul, html, body
   margin: 0
@@ -44,37 +44,37 @@ body
 
 %display-4
   @extend %light
-  @include fontSize(38, 40)
+  @include fontSize($display-4-size-s, $display-4-line-height-s)
 
   @include min($screen-m)
-    @include fontSize(44, 48)
+    @include fontSize($display-4-size-m, $display-4-line-height-m)
 
   @include min($screen-l)
-    @include fontSize(54, 56)
+    @include fontSize($display-4-size-l, $display-4-line-height-l)
 
 %display-3
-  @include fontSize(32, 40)
+  @include fontSize($display-3-size, $display-3-line-height)
 
 %display-2
-  @include fontSize(24, 32)
+  @include fontSize($display-2-size, $display-2-line-height)
 
 %display-1
-  @include fontSize(19, 32)
+  @include fontSize($display-1-size, $display-1-line-height)
 
 %display-0
-  @include fontSize(16, 24)
+  @include fontSize($display-0-size, $display-0-line-height)
 
 %body-2
   @extend %medium
-  @include fontSize(14, 20)
+  @include fontSize($body-2-size, $body-2-line-height)
 
 %body-1
   @extend %book
-  @include fontSize(14, 20)
+  @include fontSize($body-1-size, $body-1-line-height)
 
 %caption
   @extend %medium
-  @include fontSize(12, 16)
+  @include fontSize($caption-size, $caption-line-height)
 
 %button
   @extend %body-1
