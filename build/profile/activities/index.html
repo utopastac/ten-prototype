@@ -1,6 +1,6 @@
 <html lang='en'>
 <head>
-<title>Preferences</title>
+<title>Notifications</title>
 <meta content='width=device-width, initial-scale=1, height=device-height,  maximum-scale=1.0, target-densityDpi=device-dpi' name='viewport'>
 <meta content='yes' name='apple-mobile-web-app-capable'>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
@@ -48,7 +48,7 @@
 <section id='header-breadcrumb-bar'>
 <div>
 <ul>
-<li><a href="/index.html">Home</a></li> : <li><a href="/profile/index.html">Profile</a></li> : <li><a href="/profile/preferences/index.html">Preferences</a></li>
+<li><a href="/index.html">Home</a></li> : <li><a href="/profile/index.html">Profile</a></li> : <li><a href="/profile/activities/index.html">Notifications</a></li>
 </ul>
 </div>
 </section>
@@ -62,10 +62,10 @@
 <li class=''>
 <a href="/profile/details">Details</a>
 </li>
-<li class=''>
+<li class='active'>
 <a href="/profile/activities">Activities</a>
 </li>
-<li class='active'>
+<li class=''>
 <a href="/profile/preferences">Preferences</a>
 </li>
 </ul>
@@ -73,7 +73,48 @@
 </div>
 
 
-<div></div>
+<div>
+<section class='header-panel' id='upcoming-activities'>
+<header>
+<h2>Upcoming activites</h2>
+</header>
+<ul class='activities-list'>
+<li class='activity-card'>
+<h5>10.10.02</h5>
+<div>
+<p>flight</p>
+<h3>London Heathrow (LHR) - Barcelona (BCN)</h3>
+<p class='meta'>meta</p>
+</div>
+</li>
+
+<li class='activity-card'>
+<h5>10.10.02</h5>
+<div>
+<p>flight</p>
+<h3>London Heathrow (LHR) - Barcelona (BCN)</h3>
+<p class='meta'>meta</p>
+</div>
+</li>
+
+</ul>
+</section>
+<section class='main-panel' id='previous-activities'>
+<div>
+<header>
+<h2>Previous activites</h2>
+</header>
+<ul>
+<li>
+<h5></h5>
+<p>flight</p>
+<h3>London Heathrow (LHR) - Barcelona (BCN)</h3>
+<p class='meta'>meta</p>
+</li>
+</ul>
+</div>
+</section>
+</div>
 </div>
 
 <footer id='main-footer'>

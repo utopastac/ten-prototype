@@ -27,9 +27,10 @@
 
 		@include min($screen-m)
 			&:not(:last-child)
+				margin-right: units(1)
 				margin-bottom: 0
 				input[type="text"]
-					border-right: none
+					//border-right: none
 
 		&.small
 			flex: 0.5
@@ -47,11 +48,5 @@
 			margin-bottom: units(1)
 
 		input[type="text"]
-			border: $light-border
-			padding: 0 units(1)
-			height: units(7)
-			@extend %display-0
-			outline: none
-			&:focus
-				outline: none
+			
 				

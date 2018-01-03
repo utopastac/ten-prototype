@@ -2,7 +2,28 @@
 title: Preferences
 ---
 
+- content = data[config[:client]].content.preferences
+
 #profile-page
 	= partial "shared/profile/nav", :locals => {:selectedIndex => 2}
 
 	%div
+		%section#your-preferences.header-panel
+			%div
+				%header
+					%h2 Your preferences
+
+				%div
+					%ul.tag-list
+						- content.each do |preference|
+							= partial "shared/ui/preference_tag", :locals => { :title => preference }
+
+		%section#your-preferences.main-panel
+			%div
+				%header
+					%h2 Find new preferences
+					%p Add preferences to your account to get better recommendations and suggestions
+				= partial "shared/ui/text_input", :locals => { :id => "search", :label => "Search preferences", :placeholder => "Search" }
+				%ul.tag-list
+					- data.ui.preferences.each do |preference|
+						= partial "shared/ui/preference_tag", :locals => { :title => preference }

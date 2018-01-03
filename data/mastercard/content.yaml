@@ -86,3 +86,11 @@ activities:
       url: "/inspiration/travel/article"
       title: "London Heathrow (LHR) - Barcelona (BCN)"
       meta: "meta"
+preferences:
+  - "Woof"
+  - "Bark"
+  - "Happy"
+  - "Hope"
+  - "Looking"
+  - "For"
+  - "Love"

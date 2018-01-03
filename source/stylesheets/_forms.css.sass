@@ -1,3 +1,20 @@
+%form-element
+  border: $form-border
+  font-family: $font-regular
+  padding: 0 units(1)
+  height: units(7)
+  background: white
+  @extend %display-0
+  outline: none
+  border-radius: size(2)
+  display: block
+  width: 100%
+  position: relative
+  -webkit-appearance: none
+  max-width: units(60)
+  &:focus
+    outline: none
+
 label
   display: block
   @extend %display-0
@@ -9,10 +26,7 @@ input[type="text"], input[type="email"], textarea
   @extend %display-0
 
 input[type="text"]
-  height: units(5)
-  border: $form-border
-  padding: 0 units(1)
-  font-family: $font-regular
+  @extend %form-element
 
 textarea
   height: 14rem
@@ -47,20 +61,15 @@ form
   width: 100%
 
 select
-  background: white
-  display: block
-  width: 100%
-  position: relative
-  border: $light-border
-  height: units(5)
-  -webkit-appearance: none
-  @extend %display-0
-  border-radius: 0
+  @extend %form-element
   padding: 0 units(2)
   background-image: $icon-arrow-down
   background-repeat: no-repeat
   background-size: auto units(1)
   background-position: right units(1) center
+
+input[type="text"], select, input[type="checkbox"] + label
+  margin-bottom: units(3)
 
 .phone-input
   > div

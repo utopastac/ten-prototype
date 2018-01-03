@@ -1,4 +1,6 @@
 @import "profile/_details.css.sass"
+@import "profile/_preferences.css.sass"
+@import "profile/_activities.css.sass"
 @import "profile/_profile_cards.css.sass"
 @import "profile/_activities_list.css.sass"
 @import "profile/_add_details_form.css.sass"
@@ -14,9 +16,16 @@
 		margin-bottom: units(5) !important
 		margin-top: units(3) !important
 
+		> div
+
+			> header
+				margin-bottom: units(3)
+
 	.main-panel
 		@extend %content-column
 		padding: units(5) units(2)
 		background: $grey-lightest
 
 		> div
+			> header
+				margin-bottom: units(3)

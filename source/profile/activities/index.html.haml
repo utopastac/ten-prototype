@@ -10,12 +10,13 @@ title: Notifications
 
 	%div
 		%section#upcoming-activities.header-panel
-			%header
-				%h2 Upcoming activites
+			%div
+				%header
+					%h2 Upcoming activites
 
-			%ul.activities-list
-				- content.upcoming.each do |activity|
-					= partial "shared/cards/activity_card", :locals => activity
+				%ul.activities-list
+					- content.upcoming.each do |activity|
+						= partial "shared/cards/activity_card", :locals => activity
 
 
 		%section#previous-activities.main-panel
