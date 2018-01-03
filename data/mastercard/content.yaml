@@ -74,6 +74,12 @@ activities:
       url: "/inspiration/travel/article"
       title: "London Heathrow (LHR) - Barcelona (BCN)"
       meta: "meta"
+    -
+      date: "10.10.02"
+      label: "flight"
+      url: "/inspiration/travel/article"
+      title: "London Heathrow (LHR) - Barcelona (BCN)"
+      meta: "meta"
   past:
     -
       label: "flight"

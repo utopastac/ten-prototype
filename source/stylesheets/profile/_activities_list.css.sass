@@ -1,0 +1,25 @@
+ul.activities-list
+	li
+		position: relative
+		padding-left: units(4)
+		padding-bottom: units(6)
+
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			width: units(2)
+			height: units(2)
+			border-radius: 500px
+			border: $light-border
+
+		&:not(:last-child)
+			&:after
+				content: ""
+				position: absolute
+				top: units(2)
+				left: units(1)
+				bottom: 0
+				width: size(1)
+				background: $grey-light

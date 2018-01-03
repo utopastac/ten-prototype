@@ -41,7 +41,7 @@
 		top: 0
 		left: 0
 		height: units(3)
-		padding: 0 units(2)
+		padding: 0 units(1)
 		line-height: units(3)
 		@extend %book
 		@extend %caption
@@ -82,8 +82,9 @@
 
 		&:before
 			content: ""
-			height: units(2)
-			width: size(20)
+			height: size(14)
+			width: size(14)
+			margin-right: size(4)
 			@include contain-background($card-benefits-icon)
 
 	.category

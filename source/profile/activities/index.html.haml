@@ -13,13 +13,9 @@ title: Notifications
 			%header
 				%h2 Upcoming activites
 
-			%ul
+			%ul.activities-list
 				- content.upcoming.each do |activity|
-					%li
-						%h5= activity.date
-						%p= activity.label
-						%h3= activity.title
-						%p.meta= activity.meta
+					= partial "shared/cards/activity_card", :locals => activity
 
 
 		%section#previous-activities.main-panel
