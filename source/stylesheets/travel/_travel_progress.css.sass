@@ -1,0 +1,45 @@
+#travel-progress
+	height: units(8)
+	background: $travel-progress-background
+	@extend %content-column
+	@extend %content-column-flex
+
+	> ul
+		align-items: center
+		
+		li
+			position: relative
+			padding-top: units(2)
+			padding-right: units(6)
+			@extend %body-1
+			color: rgba($travel-progress-color, 0.5)
+
+			&:before
+				content: ""
+				position: absolute
+				top: 0
+				left: 0
+				width: units(1)
+				height: units(1)
+				border-radius: 500px
+				border: 1px solid rgba($travel-progress-color, 0.3)
+
+			&:not(:last-child)
+				&:after
+					content: ""
+					position: absolute
+					top: units(0.5)
+					left: units(1)
+					right: 0
+					height: size(1)
+					background: rgba($travel-progress-color, 0.3)
+
+			&.active
+				color: $travel-progress-color
+				
+				&:before
+					background: $travel-progress-color
+					border: 1px solid $travel-progress-color
+
+				&:after
+					background: $travel-progress-color

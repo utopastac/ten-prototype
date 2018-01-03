@@ -10,6 +10,7 @@
 		$("#" + target).slideToggle();
 		elem.hasClass("active") ? $(".button", elem).html("Selected") : $(".button", elem).html("Select");
 		if(travelSearchButtons.hasClass("active")){
+			travelSearchButton.attr("href", elem.data("url"))
 			travelSearchButton.show();
 		} else {
 			travelSearchButton.hide();

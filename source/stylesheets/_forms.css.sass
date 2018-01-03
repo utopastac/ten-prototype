@@ -15,6 +15,13 @@
   &:focus
     outline: none
 
+%dropdown
+  padding: 0 units(2)
+  background-image: $icon-arrow-down
+  background-repeat: no-repeat
+  background-size: auto units(1)
+  background-position: right units(1) center
+
 label
   display: block
   @extend %display-0
@@ -62,11 +69,7 @@ form
 
 select
   @extend %form-element
-  padding: 0 units(2)
-  background-image: $icon-arrow-down
-  background-repeat: no-repeat
-  background-size: auto units(1)
-  background-position: right units(1) center
+  @extend %dropdown
 
 input[type="text"], select, input[type="checkbox"] + label
   margin-bottom: units(3)

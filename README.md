@@ -27,7 +27,7 @@ Feel free to add any framework you fancy to this list.
 Feel free to deploy in any way you see fit. For now, we are using [Surge](http://surge.sh).
 Build the project into the build folder using the command:
 `bundle exec middleman build`
-Run the command:
+CD into the build folder, then run the command:
 `surge`
 Choose a URL. That's it!
 

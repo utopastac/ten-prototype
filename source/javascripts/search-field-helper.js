@@ -12,7 +12,7 @@
 		var position = elem.offset();
 		helperElement.show();
 		var xt = position.left;// + (elem.width() / 2);
-		var yt = position.top + elem.height() - 1;
+		var yt = position.top + elem.height() - 35;
 		TweenMax.set(helperElement, {left: xt, top: yt});
 		switch(helper){
 			case "":

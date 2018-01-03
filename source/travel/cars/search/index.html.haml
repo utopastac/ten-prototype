@@ -2,5 +2,7 @@
 title: Search
 ---
 
-= partial "shared/travel/travel_search"
+= partial "shared/travel/travel_progress", :locals => { :sections => ["Email", "Phone"], :selectedIndex => 0 }
+= partial "shared/search/search_summary", :locals => { :title => "LHR - NYC", :subtitle => "Undertime of all" }
+= partial "shared/ui/filters_cars"
 = partial "shared/articles/article_grid", :locals => { :cards => data.articles.travel,  :title => "Recommended travel articles", :total => 6 }

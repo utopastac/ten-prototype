@@ -1,0 +1,14 @@
+#filters
+	height: units(7)
+	background: white
+	border-bottom: $light-border
+	@extend %content-column
+	@extend %content-column-flex
+
+	> ul
+
+		li
+			flex: 1
+			border-right: $light-border
+			&:first-child
+				border-left: $light-border

@@ -9,6 +9,6 @@
 				.overlay-content
 					= partial "shared/travel/bespoke_request_form"
 		%ul#travel-search-buttons
-			= partial "shared/travel/search_button", :locals => { :type => "flights", :title => "Flights", :elem => "search-field-flights" }
-			= partial "shared/travel/search_button", :locals => { :type => "hotels", :title => "Hotels", :elem => "search-field-hotels" }
-			= partial "shared/travel/search_button", :locals => { :type => "cars", :title => "Cars", :elem => "search-field-cars" }
+			= partial "shared/travel/search_button", :locals => { :type => "flights", :title => "Flights", :elem => "search-field-flights", :url => "/travel/flights/search" }
+			= partial "shared/travel/search_button", :locals => { :type => "hotels", :title => "Hotels", :elem => "search-field-hotels", :url => "/travel/hotels/search" }
+			= partial "shared/travel/search_button", :locals => { :type => "cars", :title => "Cars", :elem => "search-field-cars", :url => "/travel/cars/search" }

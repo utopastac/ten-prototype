@@ -1,0 +1,5 @@
+#travel-progress
+	%ul
+		- sections.each_with_index do |section, index|
+			%li{ :class => index <= selectedIndex ? "active" : ""  }
+				= section

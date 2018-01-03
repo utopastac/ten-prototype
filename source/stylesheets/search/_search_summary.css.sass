@@ -1,0 +1,19 @@
+#search-summary
+	height: units(10)
+	@extend %content-column
+	@extend %content-column-flex
+	background: $search-summary-background
+	color: $search-summary-color
+
+	> div
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+		section
+			&:first-child
+				h4
+					@extend %display-2
+				p
+					@extend %caption
+					opacity: 0.7
