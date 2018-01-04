@@ -1,0 +1,20 @@
+#hotel-grid
+	padding: units(3)
+	background-color: $grey-lightest
+  
+	> ul
+		width: 100%
+		display: grid
+		grid-column-gap: units(2)
+		grid-row-gap: units(2)
+
+		.card
+			margin-bottom: units(3)
+
+		@include min($screen-m)
+			grid-column-gap: units(3)
+			grid-row-gap: units(3)
+			grid-template-columns: repeat(2, 1fr)
+
+		@include min($screen-l)
+			grid-template-columns: repeat(3, 1fr)

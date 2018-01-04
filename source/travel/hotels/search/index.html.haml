@@ -2,6 +2,10 @@
 title: Search
 ---
 
-= partial "shared/search/search_summary", :locals => { :title => "LHR - NYC", :subtitle => "Undertime of all" }
+= partial "shared/travel/travel_progress", :locals => { :title => "Hotels", :sections => ["Results", "Details", "Options"], :selectedIndex => 0 }
+= partial "shared/search/search_summary", :locals => { :title => "London", :subtitle => "Undertime of all" }
 = partial "shared/ui/filters_hotels"
+#hotel-results
+	= partial "shared/cards/hotel_grid", :locals => { :cards => data.travel.hotel_search_results, :title => "Results", :type => "basic" }
+	= partial "shared/travel/hotel_map"
 = partial "shared/articles/article_grid", :locals => { :cards => data.articles.travel,  :title => "Recommended travel articles", :total => 6 }

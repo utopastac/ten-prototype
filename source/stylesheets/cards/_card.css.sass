@@ -13,7 +13,6 @@
 
 	h1
 		@extend %display-2
-		margin-bottom: units(3)
 
 	&.full
 		padding: units(3)
@@ -46,6 +45,10 @@
 		@extend %book
 		@extend %caption
 
+		img
+			height: units(1.5)
+			margin-top: units(0.75)
+
 	.heart
 		height: units(3)
 		width: units(3)
@@ -55,7 +58,7 @@
 		position: relative
 		background: $card-content-bg
 		color: $card-content-color
-		padding: units(3)
+		padding: units(2) units(3) units(3) units(3)
 		display: flex
 		flex-direction: column
 		justify-content: flex-end
@@ -63,6 +66,7 @@
 		footer
 			display: flex
 			align-items: flex-end
+			margin-top: units(3)
 
 			> div:first-child
 				flex: 1
@@ -70,8 +74,8 @@
 			.heart
 				margin-left: units(1)
 
-			> div, > ul, > p
-				line-height: 1.5
+			> div, ul, p
+				line-height: 1.6 !important
 				margin: 0
 				padding: 0
 
@@ -86,6 +90,18 @@
 			width: size(14)
 			margin-right: size(4)
 			@include contain-background($card-benefits-icon)
+
+	.price
+		display: flex
+		p
+			margin: 0
+		.price-status
+			margin-right: units(0.5)
+		.price-value
+			@extend %medium
+
+	.description
+		opacity: 0.5
 
 	.category
 

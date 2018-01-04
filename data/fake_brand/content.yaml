@@ -43,3 +43,6 @@ cards:
       title: "Hot table"
       color: "#FFFFFF"
       text: "#141413"
+    brand:
+      color: "#FFFFFF"
+      text: "#141413"

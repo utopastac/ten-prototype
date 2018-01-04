@@ -1,0 +1,72 @@
+-
+  type: "basic"
+  url: "/travel/hotels/search/details"
+  title: "Mondrian London"
+  image: "hotels/mondrian.jpg"
+  description: "Spa, Restaurant, Parking, Laundry services"
+  meta:
+    stars: 4
+    location: "Park Lane"
+  price:
+    status: "From"
+    value: "£230 per night"
+-
+  type: "basic"
+  url: "/travel/hotels/search/details"
+  title: "Churchill London"
+  image: "hotels/churchill.jpg"
+  description: "Spa, Restaurant, Parking, Laundry services"
+  meta:
+    stars: 4
+    location: "Park Lane"
+  price:
+    status: "From"
+    value: "£230 per night"
+-
+  type: "basic"
+  url: "/travel/hotels/search/details"
+  title: "Churchill London"
+  image: "hotels/royal.jpg"
+  description: "Spa, Restaurant, Parking, Laundry services"
+  meta:
+    stars: 4
+    location: "Park Lane"
+  price:
+    status: "From"
+    value: "£230 per night"
+-
+  type: "basic"
+  url: "/travel/hotels/search/details"
+  title: "Churchill London"
+  image: "hotels/sofitel.jpg"
+  description: "Spa, Restaurant, Parking, Laundry services"
+  meta:
+    stars: 4
+    location: "Park Lane"
+  price:
+    status: "From"
+    value: "£230 per night"
+-
+  type: "basic"
+  url: "/travel/hotels/search/details"
+  title: "Churchill London"
+  image: "hotels/conrad.jpg"
+  description: "Spa, Restaurant, Parking, Laundry services"
+  meta:
+    stars: 4
+    location: "Park Lane"
+  price:
+    status: "From"
+    value: "£230 per night"
+-
+  type: "basic"
+  url: "/travel/hotels/search/details"
+  title: "Churchill London"
+  image: "hotels/mayfair.jpg"
+  description: "Spa, Restaurant, Parking, Laundry services"
+  meta:
+    stars: 4
+    location: "Park Lane"
+  price:
+    status: "From"
+    value: "£230 per night"

@@ -1,5 +1,13 @@
 #travel-progress
 	%ul
-		- sections.each_with_index do |section, index|
-			%li{ :class => index <= selectedIndex ? "active" : ""  }
-				= section
+		%h4= title
+		%div
+			- sections.each_with_index do |section, index|
+				- activeClass = ""
+				- if(index < selectedIndex)
+					- activeClass = "past"
+				- elsif(index == selectedIndex)
+					- activeClass = "active"
+
+				%li{ :class => activeClass  }
+					= section
