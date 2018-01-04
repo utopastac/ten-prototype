@@ -9,8 +9,8 @@
 			%h5{:class => "label", :style => "background: #{labelData.color}; color: #{labelData.text}"}
 				= labelData.title
 	.content
-		- if type == "full"
-			.heart
+		-# - if type == "full"
+		-# 	.heart
 		%h1= title
 		- if locals.has_key?("subtitle")
 			%h2= subtitle
@@ -36,5 +36,5 @@
 					.price
 						%p.price-status= price.status
 						%p.price-value= price.value
-			- if type != "full"
-				.heart
+			-# - if type != "full"
+			.heart

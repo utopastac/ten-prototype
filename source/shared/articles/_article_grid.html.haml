@@ -1,6 +1,7 @@
 #article-grid{:class => locals.has_key?("type") ? type : "" }
-	%header
-		%h3= title
+	- if locals.has_key?("title")
+		%header
+			%h3= title
 	%ul
 		- total.times do |x|
 			= partial "shared/cards/card", :locals => cards[x]

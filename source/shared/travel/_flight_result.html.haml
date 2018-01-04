@@ -1,0 +1,16 @@
+- stops_string = stops.to_i > 0 ? stops + " stops" : "direct"
+%li.flight-result
+	.content
+		= image_tag airline.logo
+		%div
+			%h3= from.time + " – " + to.time
+			%h4= from.abbr + " – " + to.abbr + " • " + airline.name
+			.duration
+				%p= duration
+				%p{:style => "color: #{stops.to_i > 0 ? "#DD1C11" : "#65B808"};"}= stops_string
+
+
+	.price
+		.tag= classes[0].name
+		%h2= classes[0].price
+		%p per ticket

@@ -1,0 +1,46 @@
+outbound:
+  -
+    from:
+      name: "London Heathrow"
+      abbr: "LHR"
+      time: "5.25pm"
+    to:
+      name: "Barcelona Airport"
+      abbr: "BCN"
+      time: "8.55pm"
+    airline: 
+      name: "British Airways"
+      logo: "logos/ba-logo.png"
+    flight_number: "BA AB2020"
+    stops: "0"
+    duration: "2h 30m"
+    classes:
+      - name: "Economy"
+        price: "£500"
+      - name: "Business"
+        price: "£1000"
+      - name: "First"
+        price: "£2000"
+
+  -
+    from:
+      name: "London Heathrow"
+      abbr: "LHR"
+      time: "5.25pm"
+    to:
+      name: "Barcelona Airport"
+      abbr: "BCN"
+      time: "8.55pm"
+    airline: 
+      name: "American Airlines"
+      logo: "logos/american-airlines-logo.png"
+    flight_number: "BA AB2020"
+    stops: "2"
+    duration: "2h 30m"
+    classes:
+      - name: "Economy"
+        price: "£500"
+      - name: "Business"
+        price: "£1000"
+      - name: "First"
+        price: "£2000"

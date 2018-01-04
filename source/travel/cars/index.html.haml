@@ -2,5 +2,7 @@
 title: Cars
 ---
 
-= partial "shared/travel/travel_search"
+#travel-search-container.active
+	= partial "shared/travel/search_field_cars"
+	%a.button.inline{:href => "/travel/cars/search/"} Search
 = partial "shared/articles/article_grid", :locals => { :cards => data.articles.travel,  :title => "Recommended travel articles", :total => 6 }

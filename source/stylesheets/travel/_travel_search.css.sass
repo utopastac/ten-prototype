@@ -9,6 +9,16 @@
 	@include min($screen-m)
 		padding-top: units(5)
 
+	&.active
+		> .button, .travel-search-field
+			display: block
+
+		.travel-search-field
+			margin-top: 0
+			
+		h4
+			display: none
+
 	> *:not(.button)
 		width: 100%
 

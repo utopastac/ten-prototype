@@ -1,0 +1,6 @@
+#flight-results
+	%div
+		.results
+			%ul
+				- data.travel.flight_search_results.outbound.each do |flight|
+					= partial "shared/travel/flight_result", :locals => flight

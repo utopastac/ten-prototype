@@ -15,11 +15,11 @@
 		@extend %display-2
 
 	&.full
-		padding: units(3)
-		text-align: center
+		padding: $card-content-padding
+		//text-align: center
 
-		.heart
-			margin: 0 auto
+		// .heart
+		// 	margin: 0 auto
 
 		.image
 			position: absolute
@@ -28,11 +28,8 @@
 			bottom: 0
 			right: 0
 
-		h1
-			margin-bottom: units(2)
-
 		.benefits
-			justify-content: center
+			//justify-content: center
 			margin: 0
 
 	.label
@@ -58,7 +55,7 @@
 		position: relative
 		background: $card-content-bg
 		color: $card-content-color
-		padding: units(2) units(3) units(3) units(3)
+		padding: $card-content-padding
 		display: flex
 		flex-direction: column
 		justify-content: flex-end

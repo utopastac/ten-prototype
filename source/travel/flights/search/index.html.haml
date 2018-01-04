@@ -2,6 +2,8 @@
 title: Search
 ---
 
-= partial "shared/search/search_summary", :locals => { :title => "LHR - NYC", :subtitle => "Undertime of all" }
+= partial "shared/travel/travel_progress", :locals => { :title => "Flights", :sections => ["Results", "Options"], :selectedIndex => 0 }
+= partial "shared/search/search_summary", :locals => { :title => "London - Barcelona", :subtitle => "Undertime of all" }
 = partial "shared/ui/filters_flights"
-= partial "shared/articles/article_grid", :locals => { :cards => data.articles.travel }
+= partial "shared/travel/flight_results"
+= partial "shared/articles/article_grid", :locals => { :cards => data.articles.travel, :total => 6 }

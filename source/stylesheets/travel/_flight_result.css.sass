@@ -1,0 +1,41 @@
+.flight-result
+	display: flex
+	justify-content: space-between
+	padding: units(2)
+	border: $light-border
+
+	&:not(:last-child)
+		margin-bottom: units(3)
+
+	.content
+		flex: 1
+		display: flex
+
+		img
+			margin-right: units(1)
+			width: units(5)
+			height: units(5)
+
+		h3
+			@extend %display-1
+		h4
+			@extend %body-1
+
+		.duration
+			display: flex
+
+			p
+				@extend %body-1
+				margin: 0
+
+				&:last-child
+					@extend %bold
+					margin-left: units(1)
+
+	.price
+		.tag
+
+		h2
+			@extend %display-3
+		p
+			@extend %caption
