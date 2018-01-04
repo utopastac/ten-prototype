@@ -26,7 +26,8 @@
 					%ul
 						= partial "shared/ui/stars", :locals => { :stars => meta.stars }
 						%li= meta.location
-						%li= meta.type
+						- if meta.has_key?("type")
+							%li= meta.type
 				- if locals.has_key?("benefits")
 					%p.benefits= benefits
 				- if locals.has_key?("description")

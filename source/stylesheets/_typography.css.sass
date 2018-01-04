@@ -8,10 +8,6 @@ $baseSize: 16
   font-family: $font-regular
   font-weight: $font-regular-weight
 
-%book
-  font-family: $font-book
-  font-weight: $font-book-weight
-
 %medium
   font-family: $font-medium
   font-weight: $font-medium-weight
@@ -19,6 +15,18 @@ $baseSize: 16
 %bold
   font-family: $font-medium
   font-weight: $font-bold-weight
+
+%heading
+  font-family: $font-heading
+  font-weight: $font-heading-weight
+
+%heading-large
+  font-family: $font-heading-large
+  font-weight: $font-heading-large-weight
+
+%paragraph
+  font-family: $font-paragraph
+  font-weight: $font-regular-weight
 
 h1, h2, h3, h4, h5, h6, li, ul, html, body
   margin: 0
@@ -43,7 +51,7 @@ body
   color: $text-colour
 
 %display-4
-  @extend %light
+  @extend %heading-large
   @include fontSize($display-4-size-s, $display-4-line-height-s)
 
   @include min($screen-m)
@@ -53,15 +61,19 @@ body
     @include fontSize($display-4-size-l, $display-4-line-height-l)
 
 %display-3
+  @extend %heading
   @include fontSize($display-3-size, $display-3-line-height)
 
 %display-2
+  @extend %heading
   @include fontSize($display-2-size, $display-2-line-height)
 
 %display-1
+  @extend %heading
   @include fontSize($display-1-size, $display-1-line-height)
 
 %display-0
+  @extend %heading
   @include fontSize($display-0-size, $display-0-line-height)
 
 %body-2
@@ -69,7 +81,7 @@ body
   @include fontSize($body-2-size, $body-2-line-height)
 
 %body-1
-  @extend %book
+  @extend %regular
   @include fontSize($body-1-size, $body-1-line-height)
 
 %caption
@@ -120,6 +132,7 @@ h1, h2, h3, h4, h5, h6 p
 %typography-hierarchy
   p
     @extend %display-0
+    @extend %paragraph
 
   p, ul
     + h2, + h3
