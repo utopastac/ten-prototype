@@ -70,3 +70,27 @@
   price:
     status: "From"
     value: "£230 per night"
+-
+  type: "basic"
+  url: "/travel/hotels/search/details"
+  title: "Churchill London"
+  image: "hotels/m.jpg"
+  description: "Spa, Restaurant, Parking, Laundry services"
+  meta:
+    stars: 4
+    location: "Park Lane"
+  price:
+    status: "From"
+    value: "£230 per night"
+-
+  type: "basic"
+  url: "/travel/hotels/search/details"
+  title: "Churchill London"
+  image: "hotels/langham.jpg"
+  description: "Spa, Restaurant, Parking, Laundry services"
+  meta:
+    stars: 4
+    location: "Park Lane"
+  price:
+    status: "From"
+    value: "£230 per night"
